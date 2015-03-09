@@ -1,0 +1,114 @@
+body {
+  padding: 170px 0 70px 0;
+  background: url('/assets/img/pattern.png');
+  color: #000;
+}
+
+.header {
+  color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.view-container {
+  padding: 10px;
+}
+
+.header__announcement {
+  background: #FFF;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px 0 0;
+}
+
+.header__announcement__match {
+  background: #000;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 5px 0;
+}
+
+.header__manager-infromation,
+.header__season-infromation {
+  background: #181918;
+  padding: 0;
+  height: 140px;
+}
+
+.header__field_main {
+  background: #fa7b6a;
+  padding: 0 10px;
+  font: italic normal bold 2em/1.5 sans-serif;
+}
+
+.header__field_current {
+  padding: 0 10px;
+  margin: 0;
+}
+.header__field_current-event {
+  padding: 5px 10px;
+  margin: 0 0 5px 0;
+  font-size: 1.2em;
+}
+
+.header__field_current-wrapper {
+  background: rgba(255,255,255,0.1);
+  margin: 0 0 5px 0;
+  height: 45px;
+}
+
+.header__field_current__value,
+.header__field_bottom {
+  color: #fa7b6a;
+}
+
+.header__field_bottom {
+  font-size: 1.2em;
+  word-spacing: 5px;
+  padding: 0 15px;
+}
+
+.header__announcement__match__vs {
+  color: #fa7b6a;
+  font: italic normal bold 2.9em sans-serif;
+  margin: 10px 0;
+}
+
+.header__announcement__match__type {
+  color: #fa7b6a;
+  margin: 0;
+}
+
+.header__announcement__match__date,
+.header__announcement__match__time {
+  margin: 0;
+}
+
+.header__announcement__team {
+  color:#000;
+  text-align: center;
+}
+.header__announcement__team__title {
+  color:#000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+}
+
+.header__field_bottom__icon {
+  margin: 0 0 0 15px;
+  color: #FFF;
+}
+
+.header__field_bottom__icon_red {
+  color:#fa4a35;
+}
+.header__field_bottom__icon_blue {
+  color:#3e52fa;
+}
+.header__field_bottom__icon_green {
+  color:#1afa54;
+}

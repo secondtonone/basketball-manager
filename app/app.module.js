@@ -1,0 +1,1 @@
+var basketballManagerApp=angular.module('basketballManager', ['ngResource','ngRoute']);
