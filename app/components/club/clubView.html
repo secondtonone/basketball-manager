@@ -1,3 +1,44 @@
-<div>
-  {{club}}
+<div class="container-fluid">
+  <div class="row">
+    <!-- Club -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 club">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 club__statistic">
+        <table class="club__statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr ng-repeat="(key,value) in clubStatisticItem">
+              <td class="club__statistic__item">{{value + ' :'}}</td>
+              <td class="club__statistic__value">{{clubStatisticValue[key]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 club__attributes">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 club__attributes__item" ng-repeat="attributes in clubAttributes">
+          <img src="{{attributes}}" alt="{{attributes}}" height="170">
+        </div>
+      </div>
+    </div>
+    <!-- Season -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 season">
+      <h3 class="season__title">{{seasonTitle}}</h3>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 season__statistic">
+        <table class="season__statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr ng-repeat="(key,value) in seasonStatisticItem">
+              <td class="season__statistic__item">{{value + ' :'}}</td>
+              <td class="season__statistic__value">{{seasonStatisticValue[key]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 season__player-statistic">
+        4
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 season__player-in-out">
+        5
+      </div>
+    </div>
+  </div>
 </div>

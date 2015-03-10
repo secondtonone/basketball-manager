@@ -1,0 +1,19 @@
+@import url('components/header.css');
+@import url('components/club.css');
+
+body {
+  padding: 180px 0 140px 0;
+  background: url('/assets/img/pattern.png');
+  color: #000;
+}
+
+.view-container {
+  padding: 10px;
+  background: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 480px 0 70px 0;
+  }
+}

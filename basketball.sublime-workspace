@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"m",
+				"middle"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"r",
+				"r	right"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"bs3-col",
+				"bs3-col:4	bs3-col-4"
+			],
+			[
+				"co",
+				"competitionController.js"
+			],
+			[
+				"bs3-co",
+				"bs3-col:3	bs3-col-3"
+			],
+			[
+				"bs3-c",
+				"bs3-container	bs3-container"
+			],
+			[
+				"bot",
+				"bot	CSS - bottom: 0;"
+			],
+			[
+				"abs",
+				"absolute"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"menu",
+				"menuController"
+			],
+			[
 				"club",
 				"clubController〔function〕"
 			],
@@ -46,10 +122,6 @@
 			[
 				"p",
 				"prototype"
-			],
-			[
-				"co",
-				"console.log(message);"
 			],
 			[
 				"fu",
@@ -167,22 +239,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 803,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/app.js",
-			"settings":
-			{
-				"buffer_size": 175,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Nodejs/Nodejs.sublime-build",
 	"command_palette":
@@ -293,10 +349,67 @@
 	"expanded_folders":
 	[
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js"
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/header",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source"
 	],
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/competition/competitionView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/competition/competitionController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/header/headerController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.routes.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu/menuController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/.gitignore",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu/menuView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/stadium/stadiumView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/stadium/stadiumController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/finances/financesView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/finances/financesController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/manager/managerController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/достижения.png",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/news/newsView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/calendar/calendarView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/achivments/achivmentsView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/achivments/achivmentsController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/calendar/calendarController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/news/newsController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/View.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.module.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubService.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/filters.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/directives.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/services/services.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/partials/club.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/controllers/teamController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/controllers/clubController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/partials/team.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/app.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/controllers/menuController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/services/clubController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/directives.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/filters.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/services.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/controllers.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/img",
 		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/js/app.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/index.html",
 		"/Users/maks/Documents/nodejsproject/terminal.glue",
@@ -375,56 +488,7 @@
 		"/E/xampp/htdocs/esn.pro/www/app/scripts/jqgrid/admin_exportdata.php",
 		"/E/xampp/htdocs/esn.pro/www/app/scripts/jqgrid/admin_journal_modifydata.php",
 		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/xampp/htdocs/esn.pro/www/app/scripts/stats/stats_getdata.php",
-		"/E/xampp/htdocs/esn.pro/www/css/stats.css",
-		"/E/xampp/htdocs/esn.pro/www/app/models/panel_model.php",
-		"/E/xampp/htdocs/esn.pro/www/css/panel.css",
-		"/E/xampp/htdocs/esn.pro/www/css/styles.css",
-		"/E/xampp/htdocs/esn.pro/www/app/controllers/stats_controller.php",
-		"/E/xampp/htdocs/esn.pro/www/app/bootstrap.php",
-		"/E/xampp/htdocs/esn.pro/www/app/scripts/jqgrid/user_exportdata.php",
-		"/E/xampp/htdocs/esn.pro/www/app/scripts/lists/user_checkdata.php",
-		"/E/xampp/htdocs/esn.pro/www/js/jqgrid/tables/admin_panel_jqgrid.js",
-		"/E/xampp/htdocs/esn.pro/www/app/scripts/jqgrid/user_modifydata.php",
-		"/E/xampp/htdocs/expesn.pro/www/export.var.sublime-workspace",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/SublimeMagick/SublimeMagick.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/SublimeMagick.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/Sublimall.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/Sublimall/Sublimall.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/E/xampp/htdocs/example.com/www/protected/views/help/admin.php",
-		"/E/xampp/htdocs/example.com/www/protected/views/help/user.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/WebUser.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/UserIdentity.php",
-		"/E/xampp/htdocs/example.com/www/css/enter.css",
-		"/E/xampp/htdocs/example.com/www/protected/config/main.php",
-		"/E/xampp/htdocs/example.com/www/protected/config/auth.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/PhpAuthManager.php",
-		"/E/xampp/htdocs/example.com/www/js/enter.js",
-		"/E/xampp/htdocs/example.com/www/protected/controllers/StatsController.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/StatsGetDataset.php",
-		"/E/xampp/htdocs/example.com/www/index.php",
-		"/E/xampp/htdocs/example.com/www/css/stats.css",
-		"/E/xampp/htdocs/example.com/www/css/panel.css",
-		"/E/Downloads/Google Диск/Projects/u701794099_real.sql",
-		"/E/xampp/htdocs/example.com/www/protected/views/stats/index.php",
-		"/E/xampp/htdocs/example.com/www/index-test.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/UserGetData.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/AdminGetData.php",
-		"/E/xampp/htdocs/example.com/www/js/jqgrid/tables/admin_panel_jqgrid.js",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
-		"/C/Users/secondtonone/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/E/xampp/htdocs/example.com/www/protected/runtime/application.log",
-		"/E/xampp/htdocs/example.com/www/protected/commands/ClearEvents.php",
-		"/E/xampp/htdocs/example.com/www/protected/components/ExcelExport.php",
-		"/E/xampp/htdocs/example.com/www/js/panel.js",
-		"/E/xampp/htdocs/example.com/www/protected/commands/CheckUsers.php"
+		"/E/xampp/htdocs/esn.pro/www/app/scripts/stats/stats_getdata.php"
 	],
 	"find":
 	{
@@ -526,191 +590,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 803,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								696,
-								696
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Twilight (SL).tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 175,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								90
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"apply_syntax_touched": true,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Twilight (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

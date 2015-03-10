@@ -1,19 +1,9 @@
-body {
-  padding: 170px 0 70px 0;
-  background: url('/assets/img/pattern.png');
-  color: #000;
-}
-
 .header {
   color: #FFF;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-}
-
-.view-container {
-  padding: 10px;
 }
 
 .header__announcement {
@@ -38,8 +28,11 @@ body {
 }
 
 .header__field_main {
-  background: #fa7b6a;
+  background: #F85F4B;
   padding: 0 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font: italic normal bold 2em/1.5 sans-serif;
 }
 
@@ -57,28 +50,37 @@ body {
   background: rgba(255,255,255,0.1);
   margin: 0 0 5px 0;
   height: 45px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .header__field_current__value,
 .header__field_bottom {
-  color: #fa7b6a;
+  color: #F85F4B;
 }
 
 .header__field_bottom {
   font-size: 1.2em;
   word-spacing: 5px;
   padding: 0 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .header__announcement__match__vs {
-  color: #fa7b6a;
+  color: #F85F4B;
   font: italic normal bold 2.9em sans-serif;
   margin: 10px 0;
 }
 
 .header__announcement__match__type {
-  color: #fa7b6a;
+  color: #F85F4B;
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .header__announcement__match__date,
@@ -111,4 +113,11 @@ body {
 }
 .header__field_bottom__icon_green {
   color:#1afa54;
+}
+
+@media (max-width: 768px) {
+  .header__announcement {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
