@@ -12,6 +12,33 @@ body {
   background: rgba(255,255,255,0.4);
 }
 
+.nav {
+  border: 0 solid #FFF;
+}
+.nav-pills > li.active > a {
+  background: #222322;
+  border-radius: 0;
+}
+
+.nav-pills > li.active > a:hover {
+  background: #191A19;
+  border-radius: 0;
+}
+
+.nav-pills > li > a {
+  background: #FFF;
+  border-radius: 0;
+  color: #000;
+  padding: 10px 35px;
+  font-size: 1.2em;
+}
+
+.nav-pills > li > a:hover {
+  background: #191A19;
+  border-radius: 0;
+  color: #FFF;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 480px 0 70px 0;

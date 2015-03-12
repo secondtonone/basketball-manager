@@ -1,15 +1,28 @@
-.club__statistic {
+.overview,
+.history {
+  padding: 0;
+}
+
+.club__statistic,
+.season__statistic,
+.season__player-statistic,
+.season__player-in-out {
   background: #222322;
   color:#FFF;
   padding: 10px;
   min-height: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
+
 .club__attributes {
   background: #121312;
   color:#FFF;
 }
 .club__statistic__item,
-.season__statistic__item {
+.season__statistic__item,
+.season__player-statistic__item {
   text-align: left;
   width: 50%;
   padding: 0 0 0 10px;
@@ -18,7 +31,8 @@
   overflow: hidden;
 }
 .club__statistic__value,
-.season__statistic__value {
+.season__statistic__value,
+.season__player-statistic__value {
   text-align: right;
   width: 50%;
   padding: 0 10px 0 0;
@@ -28,7 +42,8 @@
   overflow: hidden;
 }
 .club__statistic_table,
-.season__statistic_table {
+.season__statistic_table,
+.season__player-statistic_table {
   width: 100%;
   max-width: 100%;
 }
@@ -42,10 +57,4 @@
   background: #FFF;
   padding: 10px;
   margin: 0;
-}
-
-.season__statistic,
-.season__player-statistic,
-.season__player-in-out {
-  background: #191A19;
 }

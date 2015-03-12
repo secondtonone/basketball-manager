@@ -36,6 +36,7 @@ basketballManagerApp.controller('menuController',['$scope','$location',function 
   }];
 
   $scope.isActive = function(route) {
+    //console.log($location.path().split('/')[1]);
     return route === $location.path();
   };
 }]);

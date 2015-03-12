@@ -1,4 +1,12 @@
 basketballManagerApp.controller('clubController',['$scope', function($scope) {
+
+  $scope.panels = {
+    overview: 'Обзор',
+    history: 'История'
+  };
+
+  $scope.currentTab = 1;
+
   $scope.clubStatisticItem = {
     clubName: 'Название клуба',
     clubLevel: 'Уровень клуба',
@@ -29,7 +37,12 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
 
 
   $scope.seasonStatisticItem = {
-    matches: 'Матчи',
+    matches: {
+      main:'Матчи',
+      wins:'В',
+      draw:'Н',
+      loses:'П'
+    },
     scoredGoals: 'Забитые голы',
     missedGoals: 'Пропущенные голы',
     averageAttendance: 'Средняя посещаемость',
@@ -51,11 +64,45 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
   };
 
   $scope.playerStatisticItem = {
-    mvpGoals: 'Матчи',
-    mvp: 'Забитые голы',
-    mvpMatches: 'Пропущенные голы',
-    mvpPasses: 'Средняя посещаемость',
-    winningStreak: 'Победная серия',
-    losslessStreak: 'Беспроигрышная серия'
+    mostScoredGoals: 'Матчи',
+    mostPasses: 'Забитые голы',
+    mostPlayedMatches: 'Пропущенные голы',
+    mostGoalsInMatch: 'Наибольшее кол-во голов в матче',
+    mostSuccessfulMatch: 'Наиболее результативный матч',
   };
+
+  $scope.playerStatisticValue = {
+    mostScoredGoals: {
+      field:'Джек',
+      value:'3'
+    },
+    mostPasses: {
+      field:'Бмж',
+      value:'1'
+    },
+    mostPlayedMatches: {
+      field:'Стрелок',
+      value:'2'
+    },
+    mostGoalsInMatch: {
+      field:'Мастер',
+      value:'2'
+    },
+    mostSuccessfulMatch: {
+      field:'Сборная мира FC',
+      value:'0:7'
+    }
+  };
+
+  $scope.playerInOutItem = {
+    in:'Пришедшие игроки',
+    out: 'Ушедшие игроки'
+  };
+
+  $scope.playerInOutValue = {
+    in: ['Курт','Кобейн'],
+    out: ['Фреди','Меркюри']
+  };
+
+
 }]);
