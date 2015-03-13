@@ -1,5 +1,7 @@
 @import url('components/header.css');
 @import url('components/club.css');
+@import url('components/store.css');
+
 
 body {
   padding: 180px 0 140px 0;
@@ -15,30 +17,54 @@ body {
 .nav {
   border: 0 solid #FFF;
 }
-.nav-pills > li.active > a {
+.nav-pills > li.active > span {
   background: #222322;
   border-radius: 0;
+  color: #FFF;
+  cursor: pointer;
 }
 
-.nav-pills > li.active > a:hover {
-  background: #191A19;
+.nav-pills > li.active > span:hover,
+.nav-pills > li.active > span:focus {
+  background: #F85F4B;
   border-radius: 0;
 }
 
-.nav-pills > li > a {
+.nav-pills > li > span {
   background: #FFF;
   border-radius: 0;
   color: #000;
   padding: 10px 35px;
   font-size: 1.2em;
+  cursor: pointer;
+  position: relative;
+  display: block;
 }
 
-.nav-pills > li > a:hover {
-  background: #191A19;
+.nav-pills > li > span:hover {
+  background: #F85F4B;
   border-radius: 0;
   color: #FFF;
 }
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
 
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-control {
+  width: 40px;
+}
+.carousel-inner {
+  padding: 0 40px 30px 40px;
+}
+.carousel-indicators {
+  margin-bottom: 0;
+}
 @media (max-width: 768px) {
   body {
     padding: 480px 0 70px 0;

@@ -1,0 +1,21 @@
+.store {
+  background: #222322;
+}
+.carousel {
+  min-height: 450px;
+}
+.store__slide__item {
+  height: 180px;
+  width: 160px;
+  display: inline-block;
+  margin:20px 20px 0 0;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+}
+.store__slide__item__title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

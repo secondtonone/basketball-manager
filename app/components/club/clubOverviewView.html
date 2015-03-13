@@ -1,0 +1,85 @@
+<!-- Overview -->
+<div class="container-fluid overview">
+  <div class="row">
+    <!-- Club -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 club">
+      <!-- Club statistic -->
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 club__statistic">
+        <table class="club__statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr ng-repeat="(key,value) in clubStatisticItem">
+              <td class="club__statistic__item">{{value + ': '}}</td>
+              <td class="club__statistic__value">{{clubStatisticValue[key]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Club's attributes -->
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 club__attributes">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 club__attributes__item" ng-repeat="attributes in clubAttributes">
+          <img ng-src="{{attributes}}" alt="{{attributes}}" height="170">
+        </div>
+      </div>
+    </div>
+    <!-- Season -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 season">
+      <h3 class="season__title">{{seasonTitle}}</h3>
+      <!-- Season's statistic -->
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__statistic">
+        <table class="season__statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.matches.main + ': '}}</td>
+              <td class="season__statistic__value">
+                <span class="label label-success">{{seasonStatisticItem.matches.wins}}</span>
+                <span>{{seasonStatisticValue.matches.wins}}</span>
+                <span class="label label-warning">{{seasonStatisticItem.matches.draw}}</span>
+                <span>{{seasonStatisticValue.matches.draw}}</span>
+                <span class="label label-danger">{{seasonStatisticItem.matches.loses}}</span>
+                <span>{{seasonStatisticValue.matches.loses}}</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.scoredGoals + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatisticValue.scoredGoals}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.missedGoals + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatisticValue.missedGoals}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.averageAttendance + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatisticValue.averageAttendance}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.winningStreak + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatisticValue.winningStreak}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.losslessStreak + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatisticValue.losslessStreak}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Players statistic -->
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__player-statistic">
+        <table class="season__player-statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr ng-repeat="(key,value) in playerStatisticItem">
+              <td class="season__player-statistic__item">{{value + ': '}}</td>
+              <td class="season__player-statistic__value">{{playerStatisticValue[key].field +' ('+ playerStatisticValue[key].value +')'}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- In/Out players -->
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__player-in-out">
+        <p ng-repeat="(key,value) in playerInOutItem">{{value + ': '}}<span>{{playerInOutValue[key].join(', ')}}</span></p>
+      </div>
+    </div>
+  </div>
+</div>

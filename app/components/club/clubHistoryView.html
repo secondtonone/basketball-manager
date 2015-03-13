@@ -1,0 +1,82 @@
+<!-- History -->
+<div class="container-fluid history">
+  <div class="row">
+    <!-- Graphics -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 history__graphics">
+      <!-- league's position / Season -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 history__graphics__season" ng-controller="graphicClubSeasonController">
+        <canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series"></canvas>
+      </div>
+      <!-- league's position / Season's day -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 history__graphics__season-day" ng-controller="graphicClubSeasonDayController">
+        <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
+      </div>
+    </div>
+    <!-- General statistic -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 statistic">
+      <h3 class="statistic__title">{{generalSeasonTitle}}</h3>
+      <!-- General season's statistic -->
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__statistic">
+        <table class="season__statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.matches.main + ': '}}</td>
+              <td class="season__statistic__value">
+                <span class="label label-success">{{seasonStatisticItem.matches.wins}}</span>
+                <span>{{generalStatisticValue.matches.wins}}</span>
+                <span class="label label-warning">{{seasonStatisticItem.matches.draw}}</span>
+                <span>{{generalStatisticValue.matches.draw}}</span>
+                <span class="label label-danger">{{seasonStatisticItem.matches.loses}}</span>
+                <span>{{generalStatisticValue.matches.loses}}</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.scoredGoals + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatisticValue.scoredGoals}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.missedGoals + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatisticValue.missedGoals}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.averageAttendance + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatisticValue.averageAttendance}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.winningStreak + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatisticValue.winningStreak}}</td>
+            </tr>
+            <tr>
+              <td class="season__statistic__item">{{seasonStatisticItem.losslessStreak + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatisticValue.losslessStreak}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- General players statistic -->
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__player-statistic">
+        <table class="season__player-statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr ng-repeat="(key,value) in playerStatisticItem">
+              <td class="season__player-statistic__item">{{value + ': '}}</td>
+              <td class="season__player-statistic__value">{{playerGeneralStatisticValue[key].field +' ('+ playerGeneralStatisticValue[key].value +')'}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__player-statistic">
+        <table class="season__player-statistic_table">
+          <thead></thead>
+          <tbody>
+            <tr ng-repeat="(key,value) in clubTitlesItem">
+              <td class="season__player-statistic__item">{{value + ': '}}</td>
+              <td class="season__player-statistic__value">{{clubTitlesValue[key]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,1 @@
-var basketballManagerApp=angular.module('basketballManager', ['ngResource','ngRoute']);
+var basketballManagerApp=angular.module('basketballManager', ['ngResource','ngRoute','chart.js','ui.bootstrap']);

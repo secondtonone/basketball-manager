@@ -6,7 +6,9 @@
 .club__statistic,
 .season__statistic,
 .season__player-statistic,
-.season__player-in-out {
+.season__player-in-out,
+.history__graphics__season,
+.history__graphics__season-day {
   background: #222322;
   color:#FFF;
   padding: 10px;
@@ -53,7 +55,8 @@
   line-height: 200px;
 }
 
-.season__title {
+.season__title,
+.statistic__title {
   background: #FFF;
   padding: 10px;
   margin: 0;

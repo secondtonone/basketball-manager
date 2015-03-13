@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-chart.js/dist/angular-chart.css">
   </head>
   <body>
     <!-- Header -->
@@ -41,7 +42,7 @@
             <div class="row header__announcement">
               <!-- Own team -->
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__team">
-                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="top" title="{{teams.own.name}}">{{teams.own.name}}</h3>
+                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="left" title="{{teams.own.name}}">{{teams.own.name}}</h3>
                 <img ng-src="{{teams.own.img}}" alt="{{teams.own.name}}" height="50">
               </div>
               <!-- Match's time -->
@@ -53,7 +54,7 @@
               </div>
               <!-- Enemy team -->
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__team">
-                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="top" title="{{teams.enemy.name}}">{{teams.enemy.name}}</h3>
+                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="right" title="{{teams.enemy.name}}">{{teams.enemy.name}}</h3>
                 <img ng-src="{{teams.enemy.img}}" alt="{{teams.enemy.name}}" height="50">
               </div>
             </div>
@@ -112,6 +113,9 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/Chart.js/Chart.min.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+    <script src="assets/libs/ui-bootstrap-custom-tpls-0.12.1.min.js"></script>
     <!-- Scripts -->
     <script src="app/app.module.js"></script>
     <script src="app/app.routes.js"></script>
@@ -120,6 +124,8 @@
     <script src="app/shared/header/headerController.js"></script>
     <script src="app/shared/menu/menuController.js"></script>
     <script src="app/components/club/clubController.js"></script>
+    <script src="app/shared/graphic/graphicClubSeasonController.js"></script>
+    <script src="app/shared/graphic/graphicClubSeasonDayController.js"></script>
     <script src="app/components/team/teamController.js"></script>
     <script src="app/components/calendar/calendarController.js"></script>
     <script src="app/components/news/newsController.js"></script>

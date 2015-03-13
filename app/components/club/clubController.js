@@ -1,11 +1,24 @@
 basketballManagerApp.controller('clubController',['$scope', function($scope) {
 
-  $scope.panels = {
-    overview: 'Обзор',
-    history: 'История'
+  $scope.tmpUrl ='app/components/club/';
+
+  $scope.tabs = [{
+    title: 'Обзор',
+    url: $scope.tmpUrl + 'clubOverviewView.html'
+  }, {
+    title: 'История',
+    url: $scope.tmpUrl + 'clubHistoryView.html'
+  }];
+
+  $scope.currentTab = $scope.tabs[0].url;
+
+  $scope.onClickTab = function (tab) {
+    $scope.currentTab = tab.url;
   };
 
-  $scope.currentTab = 1;
+  $scope.isActiveTab = function(tabUrl) {
+    return tabUrl == $scope.currentTab;
+  };
 
   $scope.clubStatisticItem = {
     clubName: 'Название клуба',
@@ -34,6 +47,7 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
   $scope.clubAttributes = ['/assets/img/home.png','/assets/img/club.jpg','/assets/img/guest.png'];
 
   $scope.seasonTitle = 'Статистика сезона';
+  $scope.generalSeasonTitle = 'Общая статистика';
 
 
   $scope.seasonStatisticItem = {
@@ -63,10 +77,23 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     losslessStreak: 3
   };
 
+  $scope.generalStatisticValue = {
+    matches: {
+     wins: 6,
+     draw: 7,
+     loses: 9
+    },
+    scoredGoals: 16,
+    missedGoals: 2,
+    averageAttendance: 200,
+    winningStreak: 3,
+    losslessStreak: 3
+  };
+
   $scope.playerStatisticItem = {
-    mostScoredGoals: 'Матчи',
-    mostPasses: 'Забитые голы',
-    mostPlayedMatches: 'Пропущенные голы',
+    mostScoredGoals: 'Больше всего голов',
+    mostPasses: 'Больше всего передач',
+    mostPlayedMatches: 'Больше всего матчей',
     mostGoalsInMatch: 'Наибольшее кол-во голов в матче',
     mostSuccessfulMatch: 'Наиболее результативный матч',
   };
@@ -94,6 +121,29 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     }
   };
 
+  $scope.playerGeneralStatisticValue = {
+    mostScoredGoals: {
+      field:'Джек',
+      value:'6'
+    },
+    mostPasses: {
+      field:'Бмж',
+      value:'2'
+    },
+    mostPlayedMatches: {
+      field:'Стрелок',
+      value:'5'
+    },
+    mostGoalsInMatch: {
+      field:'Мастер',
+      value:'7'
+    },
+    mostSuccessfulMatch: {
+      field:'Сборная мира FC',
+      value:'4:7'
+    }
+  };
+
   $scope.playerInOutItem = {
     in:'Пришедшие игроки',
     out: 'Ушедшие игроки'
@@ -104,5 +154,21 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     out: ['Фреди','Меркюри']
   };
 
+  $scope.clubTitlesItem = {
+    champion: 'Чемпион',
+    viceChampion: 'Вице-чемпион',
+    winnerChampionsLeague: 'Победитель Лиги Чемпионов',
+    finalistChampionsLeague: 'Финалист Лиги Чемпионов',
+    winnerCup: 'Победитель Кубка',
+    finalistCup: 'Финалист Кубка'
+  };
 
+  $scope.clubTitlesValue = {
+    champion: 4,
+    viceChampion: 5,
+    winnerChampionsLeague: 6,
+    finalistChampionsLeague: 9,
+    winnerCup: 8,
+    finalistCup: 7
+  };
 }]);
