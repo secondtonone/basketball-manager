@@ -14,8 +14,26 @@
   cursor: pointer;
   padding: 5px;
 }
+.store__slide__item:hover {
+  background: #FBF6F1;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
 .store__slide__item__title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.store__slide__item__price {
+  text-align: left;
+  word-spacing: 5px;
+  padding: 0 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color:#F85F4B;
+}
+
+.store__slide__item__price__icon {
+  margin: 0 0 0 10px;
+  color: #000;
 }

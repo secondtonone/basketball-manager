@@ -7,12 +7,16 @@
 <div class="store">
   <div class="store__slide">
     <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <div class="store__slide__item" ng-repeat="item in slide" ng-click="selectItem(item.id)">
+      <slide ng-repeat="slide in slides[currentTab]" active="slide.active">
+        <div class="store__slide__item" ng-repeat="item in slide" ng-click="open(item)">
           <img ng-src="{{item.icon}}" alt="{{item.icon}}" height="120">
           <p class="store__slide__item__title" title="{{item.title}}">{{item.title}}</p>
-          <p>
-            <span ng-repeat="price in item.price">{{price}}</span>
+          <p class="store__slide__item__price">
+            <span ng-repeat="(key,value) in item.price">
+              <span class="glyphicon glyphicon-superscript store__slide__item__price__icon" aria-hidden="true" ng-show="key == 'token'"></span>
+              <span class="glyphicon glyphicon-usd store__slide__item__price__icon" aria-hidden="true" ng-show="key == 'money'"></span>
+              {{value}}
+            </span>
           </p>
         </div>
       </slide>

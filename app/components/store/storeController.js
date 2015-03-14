@@ -1,33 +1,33 @@
-basketballManagerApp.controller('storeController',['$scope', function($scope) {
+basketballManagerApp.controller('storeController',['$scope', '$modal', '$log',function($scope, $modal, $log) {
   //$scope.tmpUrl ='app/components/club/';
 
   $scope.tabs = [{
     title: 'Новые',
-    url: 1
+    url: 'new'
   }, {
     title: 'Скидки',
-    url: 2
+    url: 'discount'
   }, {
     title: 'Офиц.',
-    url: 3
+    url: 'official'
   }, {
     title: 'Аптечки',
-    url: 4
+    url: 'medikit'
   }, {
     title: 'Форма',
-    url: 5
+    url: 'form'
   }, {
     title: 'Эмблемы',
-    url: 6
+    url: 'emblem'
   }, {
     title: 'Деньги',
-    url: 7
+    url: 'money'
   }, {
     title: 'Хранилище',
-    url: 8
+    url: 'storage'
   }, {
     title: 'Подарки',
-    url: 9
+    url: 'present'
   }];
 
   $scope.currentTab = $scope.tabs[0].url;
@@ -42,7 +42,153 @@ basketballManagerApp.controller('storeController',['$scope', function($scope) {
 
   $scope.myInterval = 0;
 
-  $scope.slides = [[{
+  $scope.slides = {
+    form: [[{
+    id:3,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:34,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:3,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:34,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:3,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:34,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:36,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:32,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:13,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:63,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:39,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:53,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:73,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:43,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  }]],
+    new: [[{
+    id:3,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:34,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:3,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
+    id:34,
+    icon:'/assets/img/home.png',
+    title:'Заем в банке',
+    price: {
+      token:56,
+      money:678
+    }
+  },{
     id:3,
     icon:'/assets/img/home.png',
     title:'Заем в банке',
@@ -202,11 +348,28 @@ basketballManagerApp.controller('storeController',['$scope', function($scope) {
       token:56,
       money:678
     }
-  }]];
+  }]]
+};
 
-  $scope.selectItem = function(id) {
+  $scope.open = function (item) {
 
-    console.log(id);
+    var modalInstance = $modal.open({
+      templateUrl: 'app/components/store/storeModalView.html',
+      controller: 'storeModalController',
+      size: '',
+      backdrop: true,
+      resolve: {
+        item: function () {
+          return item;
+        }
+      }
+    });
+
+    modalInstance.result.then(function (selectedId) {
+      $scope.selected = selectedId;
+    }, function () {
+      console.log($scope.selected);
+    });
   };
 
 }]);

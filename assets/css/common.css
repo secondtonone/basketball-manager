@@ -61,10 +61,38 @@ body {
 }
 .carousel-inner {
   padding: 0 40px 30px 40px;
+  min-height: 450px;
 }
 .carousel-indicators {
   margin-bottom: 0;
 }
+
+.modal-backdrop{
+  bottom: 0;
+  position: fixed;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+.modal-body {
+  text-align: center;
+}
+.btn-primary {
+  background: #F85F4B;
+  border-color: #F85F4B;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #A12818;
+  border-color: #A12818;
+}
+input, select, button {
+    border-radius: 0px !important;
+    -webkit-appearance: none;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 480px 0 70px 0;
