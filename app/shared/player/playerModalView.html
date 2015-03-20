@@ -1,0 +1,80 @@
+<div class="modal-header">
+  <h3 class="modal-title">{{player.name}}</h3>
+</div>
+<div class="modal-body player">
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills">
+    <li ng-repeat="tab in tabs" ng-class="{active:isActiveTab(tab.url)}" ng-click="onClickTab(tab)" class="player__characteristic">
+      <span class="player__characteristic__title">{{tab.title}}</span>
+    </li>
+  </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 player-wrapper">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__main-data">
+          <div class="player__main-data__form">
+            <img src="assets/img/home.png" alt="" height="120">
+            <div class="player__main-data__form__number">{{player.number}}</div>
+          </div>
+          <div class="player__main-data__quality">
+            <span>{{player.quality.item}}: </span>
+            <img src="assets/img/star-{{player.quality.value}}.png" height="20" alt="{{player.quality.value}}">
+          </div>
+          <div class="player__main-data__role">
+            <span>{{player.roles.item}}: </span>
+            <span ng-repeat="role in player.roles.value" ng-class="{team__player__position_gk:role == 'GK' }">{{role}}</span>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__common-data">
+          <table class="player__common-data_table">
+            <thead></thead>
+            <tbody>
+              <tr>
+                <td class="player__common-data_table__item">{{player.team.item + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.team.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.nation.item + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.nation.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.tall.item + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.tall.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.weight.item + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.weight.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.hand.item + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.hand.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.contract.cost.title + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.contract.cost.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.contract.salary.title + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.contract.salary.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.age.item + ': '}}</td>
+                <td class="player__common-data_table__value">{{player.age.value}}</td>
+              </tr>
+              <tr>
+                <td class="player__common-data_table__item">{{player.speciality.item + ': '}}</td>
+                <td class="player__common-data_table__value" >
+                  <span ng-repeat="speciality in player.speciality.value">{{speciality}}</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__tender">
+          <span ng-repeat="tender in player.tender">{{tender}}</span>
+        </div>
+      </div>
+      <div ng-include="currentTab"></div>
+    </div>
+  </div>
+</div>

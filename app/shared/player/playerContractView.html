@@ -1,0 +1,31 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 player-wrapper">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__contract">
+    <h4 class="player__contract__title">{{player.contract.remain.title}}
+      <span class="player__contract__title__value">{{player.contract.remain.value}}</span>
+    </h4>
+    <p class="player__note">{{player.name + ' ' + player.contract.remain.note}}</p>
+    <button class="btn btn-primary" ng-click="ok()" >
+      {{player.contract.remain.button}}
+    </button>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__contract">
+    <h4 class="player__contract__title">{{player.contract.cost.title}}
+      <span class="player__contract__title__value">{{player.contract.cost.value}}</span>
+      <span class="glyphicon glyphicon-usd player__contract__icon" aria-hidden="true"></span>
+    </h4>
+    <p class="player__note">{{player.name + ' ' + player.contract.cost.note}}</p>
+    <button class="btn btn-primary" ng-click="ok()" >
+      {{player.contract.cost.button}}
+    </button>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__contract">
+    <h4 class="player__contract__title">{{player.contract.salary.title}}
+      <span class="player__contract__title__value">{{player.contract.salary.value}}</span>
+      <span class="glyphicon glyphicon-usd player__contract__icon" aria-hidden="true"></span>
+    </h4>
+    <p class="player__note">{{player.contract.salary.note}}</p>
+    <button class="btn btn-primary" ng-click="ok()" >
+      {{player.contract.salary.button}}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 player-wrapper">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__damage">
+    <h4 class="player__attack__title">{{player.health.damage.title}}</h4>
+    <span>{{player.name + ' ' + player.health.damage.value}}</span>
+    <button class="btn btn-primary player__button" ng-click="ok()" >
+      {{player.health.damage.button}}
+      <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon_red" aria-hidden="true" ></span>
+    </button>
+    <p class="player__note">{{player.health.damage.note}}</p>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__morality">
+    <h4 class="player__attack__title">{{player.health.morality.title}}</h4>
+    <span>{{player.health.morality.value}}</span>
+    <button class="btn btn-primary player__button" ng-click="ok()" >
+      {{player.health.morality.button}}
+      <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon_blue" aria-hidden="true" ></span>
+    </button>
+    <p class="player__note">{{player.health.morality.note}}</p>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__grade">
+    <h4 class="player__attack__title">{{player.health.grade.title}}</h4>
+    <span>{{player.health.grade.value}}</span>
+    <button class="btn btn-primary player__button" ng-click="ok()" >
+      {{player.health.grade.button}}
+      <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon_green" aria-hidden="true" ></span>
+    </button>
+    <p class="player__note">{{player.health.grade.note}}</p>
+  </div>
+</div>

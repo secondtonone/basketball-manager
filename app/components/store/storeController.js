@@ -351,6 +351,11 @@ basketballManagerApp.controller('storeController',['$scope', '$modal', '$log',fu
   }]]
 };
 
+  $scope.modalText = {
+    modalTitle: 'Вы действительно хотите купить этот предмет?',
+    buyFor: 'Купить за'
+  };
+
   $scope.open = function (item) {
 
     var modalInstance = $modal.open({
@@ -361,6 +366,9 @@ basketballManagerApp.controller('storeController',['$scope', '$modal', '$log',fu
       resolve: {
         item: function () {
           return item;
+        },
+        modalText: function () {
+          return $scope.modalText;
         }
       }
     });

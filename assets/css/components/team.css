@@ -1,0 +1,140 @@
+.team,
+.team-position {
+  background: #222322;
+  color:#FFF;
+  padding: 10px;
+  min-height: 500px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.team-position__court {
+  width: 500px;
+  height: 426px;
+  margin:20px auto 0;
+  background-image: url(/assets/img/basketball-court.png);
+}
+.team__player {
+  cursor: pointer;
+}
+.player__characteristic {
+  margin:0 !important;
+}
+.player__characteristic__title {
+  padding: 0 10px !important;
+}
+.player__main-data,
+.player__common-data,
+.player__tender,
+.player__offensive,
+.player__attack,
+.player__phsychophysic,
+.player__damage,
+.player__morality,
+.player__grade,
+.player__contract,
+.player__statistic {
+  padding: 10px 0;
+  background: #222322;
+  min-height: 210px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #FFF;
+}
+.player-wrapper {
+  padding: 0;
+}
+.team__player__position_gk {
+  background: #5AAB28;
+  padding: 2px 4px;
+}
+.team__player__quality {
+  height: 20px;
+  background-image: url(/assets/img/five_stars.png);
+  background-position: top left;
+}
+.team__player__quality_1 {
+  width: 40px;
+}
+.team__player__quality_2 {
+  width: 80px;
+}
+.team__player__quality_3 {
+  width: 120px;
+}
+.team__player__quality_4 {
+  width: 160px;
+}
+.team__player__quality_5 {
+  width: 200px;
+}
+.player__main-data__form {
+  position: relative;
+}
+.player__main-data__form__number {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  color: #AB1514;
+  font-size: 40px;
+}
+.player__main-data__quality,
+.player__main-data__role {
+  text-align: left;
+  padding: 5px;
+}
+
+.player__common-data_table {
+  width: 100%;
+  max-width: 100%;
+}
+.player__common-data_table__item {
+  text-align: left;
+  width: 50%;
+  padding: 0 0 0 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.player__common-data_table__value {
+  text-align: right;
+  width: 50%;
+  padding: 0 10px 0 0;
+  color: #F85F4B;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.player__tender {
+  text-align: center;
+}
+
+.player__offensive__title,
+.player__attack__title,
+.player__phsychophysic__title,
+.player__contract__title,
+.player__statistic__title {
+  background: #FFF;
+  padding: 10px;
+  color: #000;
+  text-align: left;
+}
+.player__button {
+  display: block;
+  margin: 10px auto;
+}
+.player__note {
+  white-space: normal;
+}
+.player__contract__title__value {
+  text-align: right;
+  padding-left: 20px;
+}
+.player__contract__icon {
+  font-size: 12px;
+}
+.player {
+  min-height: 500px;
+}

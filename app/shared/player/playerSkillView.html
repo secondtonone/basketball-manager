@@ -1,0 +1,38 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 player-wrapper">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__offensive">
+    <h4 class="player__offensive__title">{{player.skills.offensive.title}}</h4>
+    <table class="player__common-data_table">
+      <thead></thead>
+      <tbody>
+        <tr ng-repeat="character in player.skills.offensive.items">
+          <td class="player__common-data_table__item">{{character.item + ': '}}</td>
+          <td class="player__common-data_table__value">{{character.value}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__attack">
+    <h4 class="player__attack__title">{{player.skills.attack.title}}</h4>
+    <table class="player__common-data_table">
+      <thead></thead>
+      <tbody>
+        <tr ng-repeat="character in player.skills.attack.items">
+          <td class="player__common-data_table__item">{{character.item + ': '}}</td>
+          <td class="player__common-data_table__value">{{character.value}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 player__phsychophysic">
+    <h4 class="player__phsychophysic__title">{{player.skills.phsychophysic.title}}</h4>
+    <table class="player__common-data_table">
+      <thead></thead>
+      <tbody>
+        <tr ng-repeat="character in player.skills.phsychophysic.items">
+          <td class="player__common-data_table__item">{{character.item + ': '}}</td>
+          <td class="player__common-data_table__value">{{character.value}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,12 +1,14 @@
+@import url('fonts/play/play.css');
 @import url('components/header.css');
 @import url('components/club.css');
 @import url('components/store.css');
-
+@import url('components/team.css');
 
 body {
   padding: 180px 0 140px 0;
   background: url('/assets/img/pattern.png');
   color: #000;
+  font-family: 'playregular';
 }
 
 .view-container {
@@ -36,6 +38,7 @@ body {
   color: #000;
   padding: 10px 35px;
   font-size: 1.2em;
+  font-weight: bold;
   cursor: pointer;
   position: relative;
   display: block;
@@ -88,9 +91,23 @@ body {
   background: #A12818;
   border-color: #A12818;
 }
-input, select, button {
-    border-radius: 0px !important;
-    -webkit-appearance: none;
+input,
+select,
+button {
+  border-radius: 0px !important;
+  -webkit-appearance: none;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color:#F85F4B;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: rgba(249, 249, 249,0.1);
+}
+.table > tbody > tr > td {
+  border-top: 0px solid rgb(221, 221, 221);
 }
 
 @media (max-width: 768px) {

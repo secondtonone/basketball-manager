@@ -1,7 +1,7 @@
-basketballManagerApp.controller('storeModalController', function ($scope, $modalInstance, item) {
+basketballManagerApp.controller('storeModalController', function ($scope, $modalInstance, item, modalText) {
 
-  $scope.modalTitle = 'Вы действительно хотите купить этот предмет?';
-  $scope.buyFor = 'Купить за';
+  $scope.modalTitle = modalText.modalTitle;
+  $scope.buyFor = modalText.buyFor;
 
   $scope.icon = item.icon;
   $scope.id = item.id;

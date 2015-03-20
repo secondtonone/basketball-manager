@@ -1,3 +1,41 @@
-<div>
-  {{team}}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 team">
+      <div class="table-responsive">
+        <table class="table table-condensed table-striped table-hover">
+          <thead>
+            <tr>
+              <th ng-repeat="title in tableHead" title="{{title}}" data-toggle="tooltip" data-placement="top">{{title}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="team__player" ng-repeat="player in team" ng-click="open(player.id)">
+              <td>
+                <span ng-class="{team__player__position_gk:player.position == 'GK' }">
+                  {{player.position}}
+                </span>
+              </td>
+              <td>{{player.number}}</td>
+              <td>{{player.name}}</td>
+              <td>
+                <span ng-repeat="role in player.roles" ng-class="{team__player__position_gk:role == 'GK' }">
+                  {{role}}
+                </span>
+              </td>
+              <td>{{player.nation}}</td>
+              <td>{{player.transfer}}</td>
+              <td>{{player.status}}</td>
+              <td>{{player.speciality}}</td>
+              <td>
+                <img src="assets/img/star-{{player.quality}}.png" height="10" alt="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 team-position">
+      <div class="team-position__court"></div>
+    </div>
+  </div>
 </div>
