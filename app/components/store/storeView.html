@@ -7,7 +7,7 @@
 <div class="store">
   <div class="store__slide">
     <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides[currentTab]" active="slide.active">
+      <slide ng-repeat="slide in slides" active="slide.active">
         <div class="store__slide__item" ng-repeat="item in slide" ng-click="open(item)">
           <img ng-src="{{item.icon}}" alt="{{item.icon}}" height="120">
           <p class="store__slide__item__title" title="{{item.title}}">{{item.title}}</p>

@@ -1,360 +1,72 @@
-basketballManagerApp.controller('storeController',['$scope', '$modal', '$log',function($scope, $modal, $log) {
+basketballManagerApp.controller('storeController',['$scope', '$modal', '$log','$http',function($scope, $modal, $log, $http) {
   //$scope.tmpUrl ='app/components/club/';
 
-  $scope.tabs = [{
-    title: 'Новые',
-    url: 'new'
-  }, {
-    title: 'Скидки',
-    url: 'discount'
-  }, {
-    title: 'Офиц.',
-    url: 'official'
-  }, {
-    title: 'Аптечки',
-    url: 'medikit'
-  }, {
-    title: 'Форма',
-    url: 'form'
-  }, {
-    title: 'Эмблемы',
-    url: 'emblem'
-  }, {
-    title: 'Деньги',
-    url: 'money'
-  }, {
-    title: 'Хранилище',
-    url: 'storage'
-  }, {
-    title: 'Подарки',
-    url: 'present'
-  }];
+  $scope.getItems = function (group) {
 
-  $scope.currentTab = $scope.tabs[0].url;
+    $http.post('/assets/source/storeItem-'+ group +'.json'/*, {msg:'hello word!'}*/).
+    success(function(data, status, headers, config) {
+      // this callback will be called asynchronously
+      // when the response is available
+      $scope.slides = data;
+
+    });
+  };
+
+  $http.post('/assets/source/storeData.json'/*, {msg:'hello word!'}*/).
+  success(function(data, status, headers, config) {
+    // this callback will be called asynchronously
+    // when the response is available
+    $scope.tabs = [{
+      title: data.new,
+      url: 'new'
+    }, {
+      title: data.discount,
+      url: 'discount'
+    }, {
+      title: data.official,
+      url: 'official'
+    }, {
+      title: data.medkit,
+      url: 'medkit'
+    }, {
+      title: data.form,
+      url: 'form'
+    }, {
+      title: data.emblem,
+      url: 'emblem'
+    }, {
+      title: data.money,
+      url: 'money'
+    }, {
+      title: data.storage,
+      url: 'storage'
+    }, {
+      title: data.present,
+      url: 'present'
+    }];
+
+    $scope.currentTab = $scope.tabs[0].url;
+
+    $scope.getItems($scope.tabs[0].url);
+
+  });
+
 
   $scope.onClickTab = function (tab) {
     $scope.currentTab = tab.url;
+
+    $scope.getItems(tab.url);
+
+
   };
 
   $scope.isActiveTab = function(tabUrl) {
     return tabUrl == $scope.currentTab;
   };
 
+
   $scope.myInterval = 0;
 
-  $scope.slides = {
-    form: [[{
-    id:3,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:34,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:3,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:34,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:3,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:34,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:36,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:32,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:13,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:63,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:39,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:53,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:73,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:43,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  }]],
-    new: [[{
-    id:3,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:34,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:3,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:34,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:3,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:34,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:36,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:32,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:13,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:63,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:39,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:53,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:73,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:43,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  }],[{
-    id:356,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:341,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:356,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:328,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:133,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:631,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:399,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:539,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:736,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  },{
-    id:433,
-    icon:'/assets/img/home.png',
-    title:'Заем в банке',
-    price: {
-      token:56,
-      money:678
-    }
-  }]]
-};
-
-  $scope.modalText = {
-    modalTitle: 'Вы действительно хотите купить этот предмет?',
-    buyFor: 'Купить за'
-  };
 
   $scope.open = function (item) {
 
@@ -367,9 +79,10 @@ basketballManagerApp.controller('storeController',['$scope', '$modal', '$log',fu
         item: function () {
           return item;
         },
-        modalText: function () {
-          return $scope.modalText;
+        http: function () {
+          return  $http;
         }
+
       }
     });
 

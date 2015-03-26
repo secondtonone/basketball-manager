@@ -8,9 +8,9 @@
         <table class="club__statistic_table">
           <thead></thead>
           <tbody>
-            <tr ng-repeat="(key,value) in clubStatisticItem">
-              <td class="club__statistic__item">{{value + ': '}}</td>
-              <td class="club__statistic__value">{{clubStatisticValue[key]}}</td>
+            <tr ng-repeat="statistic in clubStatistic">
+              <td class="club__statistic__item">{{statistic.item + ': '}}</td>
+              <td class="club__statistic__value">{{statistic.value}}</td>
             </tr>
           </tbody>
         </table>
@@ -31,35 +31,35 @@
           <thead></thead>
           <tbody>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.matches.main + ': '}}</td>
+              <td class="season__statistic__item">{{seasonStatistic.matches.title + ': '}}</td>
               <td class="season__statistic__value">
-                <span class="label label-success">{{seasonStatisticItem.matches.wins}}</span>
-                <span>{{seasonStatisticValue.matches.wins}}</span>
-                <span class="label label-warning">{{seasonStatisticItem.matches.draw}}</span>
-                <span>{{seasonStatisticValue.matches.draw}}</span>
-                <span class="label label-danger">{{seasonStatisticItem.matches.loses}}</span>
-                <span>{{seasonStatisticValue.matches.loses}}</span>
+                <span class="label label-success">{{seasonStatistic.matches.items.wins.item}}</span>
+                <span>{{seasonStatistic.matches.items.wins.value}}</span>
+                <span class="label label-warning">{{seasonStatistic.matches.items.draw.item}}</span>
+                <span>{{seasonStatistic.matches.draw.value}}</span>
+                <span class="label label-danger">{{seasonStatistic.matches.items.loses.item}}</span>
+                <span>{{seasonStatistic.matches.items.loses.value}}</span>
               </td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.scoredGoals + ': '}}</td>
-              <td class="season__statistic__value">{{seasonStatisticValue.scoredGoals}}</td>
+              <td class="season__statistic__item">{{seasonStatistic.scoredGoals.item + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatistic.scoredGoals.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.missedGoals + ': '}}</td>
-              <td class="season__statistic__value">{{seasonStatisticValue.missedGoals}}</td>
+              <td class="season__statistic__item">{{seasonStatistic.missedGoals.item + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatistic.missedGoals.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.averageAttendance + ': '}}</td>
-              <td class="season__statistic__value">{{seasonStatisticValue.averageAttendance}}</td>
+              <td class="season__statistic__item">{{seasonStatistic.averageAttendance.item + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatistic.averageAttendance.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.winningStreak + ': '}}</td>
-              <td class="season__statistic__value">{{seasonStatisticValue.winningStreak}}</td>
+              <td class="season__statistic__item">{{seasonStatistic.winningStreak.item + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatistic.winningStreak.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.losslessStreak + ': '}}</td>
-              <td class="season__statistic__value">{{seasonStatisticValue.losslessStreak}}</td>
+              <td class="season__statistic__item">{{seasonStatistic.losslessStreak.item + ': '}}</td>
+              <td class="season__statistic__value">{{seasonStatistic.losslessStreak.value}}</td>
             </tr>
           </tbody>
         </table>
@@ -69,16 +69,16 @@
         <table class="season__player-statistic_table">
           <thead></thead>
           <tbody>
-            <tr ng-repeat="(key,value) in playerStatisticItem">
-              <td class="season__player-statistic__item">{{value + ': '}}</td>
-              <td class="season__player-statistic__value">{{playerStatisticValue[key].field +' ('+ playerStatisticValue[key].value +')'}}</td>
+            <tr ng-repeat="statistic in playerStatistic">
+              <td class="season__player-statistic__item">{{statistic.item + ': '}}</td>
+              <td class="season__player-statistic__value">{{statistic.field +' ('+ statistic.value +')'}}</td>
             </tr>
           </tbody>
         </table>
       </div>
       <!-- In/Out players -->
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 season__player-in-out">
-        <p ng-repeat="(key,value) in playerInOutItem">{{value + ': '}}<span>{{playerInOutValue[key].join(', ')}}</span></p>
+        <p ng-repeat="category in playerInOut">{{category.item + ': '}}<span>{{category.value.join(', ')}}</span></p>
       </div>
     </div>
   </div>

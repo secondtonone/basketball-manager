@@ -9,16 +9,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="team__player" ng-repeat="player in team" ng-click="open(player.id)">
+            <tr ng-repeat="player in team" ng-click="open(player.id)" ng-class="{team__player: player.inSquad == '0', team__player_insquad: position.inSquad == '1'}">
               <td>
-                <span ng-class="{team__player__position_gk:player.position == 'GK' }">
+                <span class="team__player__position" ng-class="{team__player__position_pg:player.position == 'PG', team__player__position_sg:player.position == 'SG',team__player__position_sf:player.position == 'SF',team__player__position_pf:player.position == 'PF',team__player__position_c:player.position == 'C' }">
                   {{player.position}}
                 </span>
               </td>
               <td>{{player.number}}</td>
               <td>{{player.name}}</td>
               <td>
-                <span ng-repeat="role in player.roles" ng-class="{team__player__position_gk:role == 'GK' }">
+                <span ng-repeat="role in player.roles" class="team__player__position" ng-class="{team__player__position_pg:role == 'PG', team__player__position_sg:role == 'SG',team__player__position_sf:role == 'SF',team__player__position_pf:role == 'PF',team__player__position_c:role == 'C'}">
                   {{role}}
                 </span>
               </td>

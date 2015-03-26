@@ -48,6 +48,10 @@ basketballManagerApp.config(['$routeProvider', '$locationProvider', function($ro
       templateUrl: viewUrl + 'transfers/transfersView.html',
       controller: 'transfersController'
     }).
+    when('/match', {
+      templateUrl: viewUrl + 'match/matchView.html',
+      controller: 'matchController'
+    }).
     otherwise({
       redirectTo: '/club'
     });

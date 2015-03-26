@@ -1,0 +1,88 @@
+{
+  "header": {
+    "userInfo": {
+      "userName": "Great Player",
+      "levelManager": {
+        "item": "Уровень менеджера",
+        "value": "1-Новичок"
+      },
+      "playerPosition": {
+        "item": "Позиция в лиге",
+        "value": "5"
+      },
+      "playerResources": {
+        "fans": "234",
+        "money": "234,5M",
+        "tokens": "23"
+      },
+      "medicineBox": {
+        "red": 2,
+        "blue": 3,
+        "green": 5
+      },
+      "userEvent": "Доступна разминка"
+    },
+    "gameInfo": {
+      "seasonGame": "Сезон 1, день 26/28",
+      "typeOfMatch": "Клубный матч",
+      "dateOfMatch": "Завтра",
+      "timeOfMatch": "13 : 40",
+      "teams": {
+        "own": {
+          "name": "My club bs",
+          "img": "/assets/img/club.jpg"
+        },
+        "enemy": {
+          "name": "Enemy club bs",
+          "img": "/assets/img/club.jpg"
+        }
+      }
+    }
+  },
+  "menu": [
+    {
+      "title": "Новости",
+      "link": "/news"
+    },
+    {
+      "title": "Команда",
+      "link": "/team"
+    },
+    {
+      "title": "Тренировки",
+      "link": "/training"
+    },
+    {
+      "title": "Календарь",
+      "link": "/calendar"
+    },
+    {
+      "title": "Соревнования",
+      "link": "/competition"
+    },
+    {
+      "title": "Трансферы",
+      "link": "/transfers"
+    },
+    {
+      "title": "Финансы",
+      "link": "/finances"
+    },
+    {
+      "title": "Стадион",
+      "link": "/stadium"
+    },
+    {
+      "title": "Клуб",
+      "link": "/club"
+    },
+    {
+      "title": "Менеджер",
+      "link": "/manager"
+    },
+    {
+      "title": "Магазин",
+      "link": "/store"
+    }
+  ]
+}

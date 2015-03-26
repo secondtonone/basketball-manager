@@ -1,0 +1,147 @@
+{
+  "tableHead": {
+    "position": "Позиция",
+    "number": "№",
+    "name": "Имя",
+    "roles": "Роли",
+    "nation": "Национальность",
+    "transfer": "Трансфер",
+    "status": "Статус",
+    "speciality": "Специальность",
+    "quality": "Качество"
+  },
+  "tabs": {
+    "skill": "Навыки",
+    "health": "Здоровье",
+    "contract": "Контракт",
+    "statistic": "Статистика",
+    "transfer": "Трансферы"
+  },
+  "modalText": {
+    "modalTitle": "Вы действительно хотите купить этот предмет?",
+    "buyFor": "Купить за"
+  },
+  "team":[
+    {
+      "id": 1,
+      "position": "PG",
+      "number": 1,
+      "name": "V Kaleka1",
+      "roles": [
+        "PG"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "1",
+      "speciality": "",
+      "quality": 2
+    },
+    {
+      "id": 2,
+      "position": "SG",
+      "number": 12,
+      "name": "V Kaleka2",
+      "roles": [
+        "SG"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "1",
+      "speciality": "",
+      "quality": 5
+    },
+    {
+      "id": 3,
+      "position": "SF",
+      "number": 13,
+      "name": "V Kaleka3",
+      "roles": [
+        "SF"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "1",
+      "speciality": "",
+      "quality": 1
+    },
+    {
+      "id": 4,
+      "position": "PF",
+      "number": 14,
+      "name": "V Kaleka4",
+      "roles": [
+        "PF",
+        "C"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "1",
+      "speciality": "",
+      "quality": 3
+    },
+    {
+      "id": 5,
+      "position": "SF",
+      "number": 15,
+      "name": "V Kaleka3",
+      "roles": [
+        "SF"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "1",
+      "speciality": "",
+      "quality": 1
+    },
+    {
+      "id": 6,
+      "position": "SF",
+      "number": 16,
+      "name": "V Kaleka3",
+      "roles": [
+        "SF"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "0",
+      "speciality": "",
+      "quality": 1
+    },
+    {
+      "id": 7,
+      "position": "SF",
+      "number": 17,
+      "name": "V Kaleka3",
+      "roles": [
+        "SF"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "0",
+      "speciality": "",
+      "quality": 1
+    },
+    {
+      "id": 8,
+      "position": "SF",
+      "number": 18,
+      "name": "V Kaleka3",
+      "roles": [
+        "SF"
+      ],
+      "nation": "RUS",
+      "transfer": "",
+      "status": "",
+      "inSquad": "0",
+      "speciality": "",
+      "quality": 1
+    }
+  ]
+}

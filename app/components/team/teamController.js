@@ -1,88 +1,36 @@
-basketballManagerApp.controller('teamController',['$scope', '$modal', '$log',function ($scope, $modal, $log) {
+basketballManagerApp.controller('teamController',['$scope', '$modal', '$log','$http',function ($scope, $modal, $log, $http) {
 
   $scope.tmpUrl ='app/shared/player/';
 
-  $scope.tableHead = {
-    position:'Позиция',
-    number:'№',
-    name:'Имя',
-    roles:'Роли',
-    nation:'Национальность',
-    transfer:'Трансфер',
-    status:'Статус',
-    speciality:'Специальность',
-    quality:'Качество'
-  };
+  $http.post('/assets/source/teamData.json'/*, {msg:'hello word!'}*/).
+  success(function(data, status, headers, config) {
+    // this callback will be called asynchronously
+    // when the response is available
 
-  $scope.team = [{
-    id: 1,
-    position:'GK',
-    number:'1',
-    name:'V Kaleka1',
-    roles:['GK'],
-    nation:'RUS',
-    transfer:'',
-    status:'',
-    speciality:'',
-    quality:'2',
-  },{
-    id: 2,
-    position:'GK',
-    number:'12',
-    name:'V Kaleka2',
-    roles:['GK'],
-    nation:'RUS',
-    transfer:'',
-    status:'',
-    speciality:'',
-    quality:'5',
-  },{
-    id: 3,
-    position:'GK',
-    number:'13',
-    name:'V Kaleka3',
-    roles:['GK'],
-    nation:'RUS',
-    transfer:'',
-    status:'',
-    speciality:'',
-    quality:'1',
-  },{
-    id: 4,
-    position:'GK',
-    number:'14',
-    name:'V Kaleka4',
-    roles:['GK'],
-    nation:'RUS',
-    transfer:'',
-    status:'',
-    speciality:'',
-    quality:'3',
-  }];
+    $scope.tableHead = data.tableHead;
+    $scope.team = data.team;
 
-  $scope.tabs = [{
-    title: 'Навыки',
-    url: $scope.tmpUrl + '/playerSkillView.html'
-  },{
-    title: 'Здоровье',
-    url: $scope.tmpUrl + '/playerHealthView.html'
-  }, {
-    title: 'Контракт',
-    url: $scope.tmpUrl + '/playerContractView.html'
-  }, {
-    title: 'Статистика',
-    url: $scope.tmpUrl + '/playerStatisticView.html'
-  }, {
-    title: 'Трансферы',
-    url: $scope.tmpUrl + '/playerTransferView.html'
-  }];
+    $scope.tabs = [{
+      title: data.tabs.skill,
+      url: $scope.tmpUrl + '/playerSkillView.html'
+    },{
+      title: data.tabs.health,
+      url: $scope.tmpUrl + '/playerHealthView.html'
+    }, {
+      title: data.tabs.contract,
+      url: $scope.tmpUrl + '/playerContractView.html'
+    }, {
+      title: data.tabs.statistic,
+      url: $scope.tmpUrl + '/playerStatisticView.html'
+    }, {
+      title: data.tabs.transfer,
+      url: $scope.tmpUrl + '/playerTransferView.html'
+    }];
+
+    $scope.modalText = data.modalText;
 
 
-  $scope.modalText = {
-    modalTitle: 'Вы действительно хотите купить этот предмет?',
-    buyFor: 'Купить за'
-  };
-
+  });
 
   $scope.open = function (id) {
 
@@ -100,6 +48,9 @@ basketballManagerApp.controller('teamController',['$scope', '$modal', '$log',fun
         },
         tabs: function () {
           return $scope.tabs;
+        },
+        http: function () {
+          return $http;
         }
       }
     });

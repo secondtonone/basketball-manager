@@ -1,16 +1,36 @@
-basketballManagerApp.controller('clubController',['$scope', function($scope) {
+basketballManagerApp.controller('clubController',['$scope','$http', function($scope, $http) {
 
   $scope.tmpUrl ='app/components/club/';
 
-  $scope.tabs = [{
-    title: 'Обзор',
-    url: $scope.tmpUrl + 'clubOverviewView.html'
-  }, {
-    title: 'История',
-    url: $scope.tmpUrl + 'clubHistoryView.html'
-  }];
+  $http.post('/assets/source/clubData.json'/*, {msg:'hello word!'}*/).
+  success(function(data, status, headers, config) {
+    // this callback will be called asynchronously
+    // when the response is available
+    //
+    $scope.response = data;
 
-  $scope.currentTab = $scope.tabs[0].url;
+    $scope.tabs = [{
+      title: data.tabs.overview,
+      url: $scope.tmpUrl + 'clubOverviewView.html'
+    }, {
+      title: data.tabs.history,
+      url: $scope.tmpUrl + 'clubHistoryView.html'
+    }];
+
+    $scope.currentTab = $scope.tabs[0].url;
+
+    $scope.clubStatistic = data.clubStatistic;
+    $scope.clubAttributes = data.clubAttributes;
+    $scope.seasonTitle = data.seasonTitle;
+    $scope.generalSeasonTitle = data.generalSeasonTitle;
+    $scope.seasonStatistic = data.seasonStatistic;
+    $scope.generalStatistic = data.generalStatistic;
+    $scope.playerStatistic = data.playerStatistic;
+    $scope.playerGeneralStatistic = data.playerGeneralStatistic;
+    $scope.playerInOut = data.playerInOut;
+    $scope.clubTitles = data.clubTitles;
+  });
+
 
   $scope.onClickTab = function (tab) {
     $scope.currentTab = tab.url;
@@ -20,7 +40,7 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     return tabUrl == $scope.currentTab;
   };
 
-  $scope.clubStatisticItem = {
+  /*$scope.clubStatisticItem = {
     clubName: 'Название клуба',
     clubLevel: 'Уровень клуба',
     isFounded: 'Основан',
@@ -32,7 +52,7 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     fanclubName: 'Название фан-клуба'
   };
 
-  $scope.clubStatisticValue = {
+ /* $scope.clubStatisticValue = {
     clubName: 'Club FC',
     clubLevel: '1',
     isFounded: '26.05.2015 13:45',
@@ -42,15 +62,15 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     stadiumCapacity: '300',
     clubManager: 'Great Player',
     fanclubName: 'Club FC fans'
-  };
+  };*/
 
-  $scope.clubAttributes = ['/assets/img/home.png','/assets/img/club.jpg','/assets/img/guest.png'];
+  /*$scope.clubAttributes = ['/assets/img/home.png','/assets/img/club.jpg','/assets/img/guest.png'];*/
 
-  $scope.seasonTitle = 'Статистика сезона';
-  $scope.generalSeasonTitle = 'Общая статистика';
+  /*$scope.seasonTitle = 'Статистика сезона';
+  $scope.generalSeasonTitle = 'Общая статистика';*/
 
 
-  $scope.seasonStatisticItem = {
+  /*$scope.seasonStatisticItem = {
     matches: {
       main:'Матчи',
       wins:'В',
@@ -75,9 +95,9 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     averageAttendance: 200,
     winningStreak: 3,
     losslessStreak: 3
-  };
+  };*/
 
-  $scope.generalStatisticValue = {
+  /*$scope.generalStatisticValue = {
     matches: {
      wins: 6,
      draw: 7,
@@ -88,9 +108,9 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     averageAttendance: 200,
     winningStreak: 3,
     losslessStreak: 3
-  };
+  };*/
 
-  $scope.playerStatisticItem = {
+  /*$scope.playerStatisticItem = {
     mostScoredGoals: 'Больше всего голов',
     mostPasses: 'Больше всего передач',
     mostPlayedMatches: 'Больше всего матчей',
@@ -119,9 +139,9 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
       field:'Сборная мира FC',
       value:'0:7'
     }
-  };
+  };*/
 
-  $scope.playerGeneralStatisticValue = {
+ /* $scope.playerGeneralStatisticValue = {
     mostScoredGoals: {
       field:'Джек',
       value:'6'
@@ -142,9 +162,9 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
       field:'Сборная мира FC',
       value:'4:7'
     }
-  };
+  };*/
 
-  $scope.playerInOutItem = {
+ /* $scope.playerInOutItem = {
     in:'Пришедшие игроки',
     out: 'Ушедшие игроки'
   };
@@ -152,9 +172,9 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
   $scope.playerInOutValue = {
     in: ['Курт','Кобейн'],
     out: ['Фреди','Меркюри']
-  };
+  };*/
 
-  $scope.clubTitlesItem = {
+  /*$scope.clubTitlesItem = {
     champion: 'Чемпион',
     viceChampion: 'Вице-чемпион',
     winnerChampionsLeague: 'Победитель Лиги Чемпионов',
@@ -170,5 +190,5 @@ basketballManagerApp.controller('clubController',['$scope', function($scope) {
     finalistChampionsLeague: 9,
     winnerCup: 8,
     finalistCup: 7
-  };
+  };*/
 }]);

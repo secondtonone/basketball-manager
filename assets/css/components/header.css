@@ -115,9 +115,21 @@
   color:#1afa54;
 }
 
+.match__beggining {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 50px;
+  margin: 0;
+  z-index: 1031;
+}
+
 @media (max-width: 768px) {
   .header__announcement {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  .match__beggining {
+    bottom: 65px;
   }
 }

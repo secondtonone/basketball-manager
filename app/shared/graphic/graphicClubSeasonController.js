@@ -1,8 +1,9 @@
-basketballManagerApp.controller('graphicClubSeasonController',['$scope', function($scope) {
-  $scope.labels = ['1 сезон', '2 сезон', '3 сезон', '4 сезон', '5 сезон', '6 сезон', '7 сезон'];
-  $scope.series = ['Позиция в лиге за сезоны'];
+basketballManagerApp.controller('graphicClubSeasonController',['$scope','$http', function($scope, $http) {
 
-  $scope.data = [
-    [1,2,4,5,1]
-  ];
+  //инфу можно получить из родительского контроллера
+  var clubSeason = $scope.response.graphics.clubSeason;
+  $scope.labels = clubSeason.labels;
+  $scope.series = clubSeason.series;
+
+  $scope.data = clubSeason.data;
 }]);

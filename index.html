@@ -9,32 +9,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="assets/css/components/angular-chart.css">
   </head>
-  <body>
+  <body ng-controller="mainController">
     <!-- Header -->
-    <div class="header" ng-controller="headerController">
+    <div class="header">
       <div class="container-fluid">
         <div class="row">
           <!-- User information -->
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 header__manager-infromation">
             <!-- User name -->
-            <p class="header__field_main">{{userName}}</p>
+            <p class="header__field_main">{{headerData.userInfo.userName}}</p>
             <!-- User level -->
             <div class="header__field_current-wrapper">
-              <p class="header__field_current">{{levelManager + ': '}}
-                <span class="header__field_current__value">{{levelManagerValue}}</span>
+              <p class="header__field_current">{{headerData.userInfo.levelManager.item + ': '}}
+                <span class="header__field_current__value">{{headerData.userInfo.levelManager.value}}</span>
               </p>
-              <p class="header__field_current">{{playerPosition + ': '}}
-                <span class="header__field_current__value">{{playerPositionValue}}</span>
+              <p class="header__field_current">{{headerData.userInfo.playerPosition.item + ': '}}
+                <span class="header__field_current__value">{{headerData.userInfo.playerPosition.value}}</span>
               </p>
             </div>
             <!-- User resources -->
             <p class="header__field_bottom">
               <span class="glyphicon glyphicon-user header__field_bottom__icon" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{playerResources.fans}}</span>
+              <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.fans}}</span>
               <span class="glyphicon glyphicon-usd header__field_bottom__icon" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{playerResources.money}}</span>
+              <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.money}}</span>
               <span class="glyphicon glyphicon-superscript header__field_bottom__icon" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{playerResources.tokens}}</span>
+              <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.tokens}}</span>
             </p>
           </div>
           <!-- Match's announcment -->
@@ -42,42 +42,42 @@
             <div class="row header__announcement">
               <!-- Own team -->
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__team">
-                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="left" title="{{teams.own.name}}">{{teams.own.name}}</h3>
-                <img ng-src="{{teams.own.img}}" alt="{{teams.own.name}}" height="50">
+                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="left" title="{{headerData.gameInfo.teams.own.name}}">{{headerData.gameInfo.teams.own.name}}</h3>
+                <img ng-src="{{headerData.gameInfo.teams.own.img}}" alt="{{headerData.gameInfo.teams.own.name}}" height="50">
               </div>
               <!-- Match's time -->
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__match">
-                <p class="text-center header__announcement__match__type">{{typeOfMatch}}</p>
+                <p class="text-center header__announcement__match__type">{{headerData.gameInfo.typeOfMatch}}</p>
                 <p class="text-center text-uppercase header__announcement__match__vs">vs</p>
-                <p class="text-center header__announcement__match__date">{{dateOfMatch}}</p>
-                <p class="text-center header__announcement__match__time">{{timeOfMatch}}</p>
+                <p class="text-center header__announcement__match__date">{{headerData.gameInfo.dateOfMatch}}</p>
+                <p class="text-center header__announcement__match__time">{{headerData.gameInfo.timeOfMatch}}</p>
               </div>
               <!-- Enemy team -->
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__team">
-                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="right" title="{{teams.enemy.name}}">{{teams.enemy.name}}</h3>
-                <img ng-src="{{teams.enemy.img}}" alt="{{teams.enemy.name}}" height="50">
+                <h3 class="header__announcement__team__title" data-toggle="tooltip" data-placement="right" title="{{headerData.gameInfo.teams.enemy.name}}">{{headerData.gameInfo.teams.enemy.name}}</h3>
+                <img ng-src="{{headerData.gameInfo.teams.enemy.img}}" alt="{{headerData.gameInfo.teams.enemy.name}}" height="50">
               </div>
             </div>
           </div>
           <!-- Season,events, medicine -->
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 header__season-infromation">
             <!-- Season's information -->
-            <p class="header__field_main">{{seasonGame}}</p>
+            <p class="header__field_main">{{headerData.gameInfo.seasonGame}}</p>
             <!-- User event -->
             <div class="header__field_current-wrapper">
               <p class="header__field_current-event">
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                {{userEvent}}
+                {{headerData.userInfo.userEvent}}
               </p>
             </div>
             <!-- User medicine boxes -->
             <p class="header__field_bottom">
               <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_red" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{medicineBox.red}}</span>
+              <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.red}}</span>
               <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_blue" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{medicineBox.blue}}</span>
+              <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.blue}}</span>
               <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_green" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{medicineBox.green}}</span>
+              <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.green}}</span>
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@
     <!-- View -->
     <div class="view-container" ng-view></div>
     <!-- Menu -->
-    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation" ng-controller="menuController">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -101,12 +101,15 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav" ng-repeat="item in menu">
+        <ul class="nav navbar-nav" ng-repeat="item in menuData">
           <li ng-class="{active: isActive(item.link)}"><a href="#{{item.link}}">{{item.title}}</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </nav>
+    <div class="match__beggining">
+      <a href="#/match"><img src="assets/img/basketbnc.gif" height="100"></a>
+    </div>
     <!-- Libs -->
     <script src="assets/libs/jquery.min.js"></script>
     <script src="assets/libs/angular.min.js"></script>
@@ -121,8 +124,7 @@
     <script src="app/app.routes.js"></script>
     <script src="assets/js/tooltip.js"></script>
     <!-- Controllers -->
-    <script src="app/shared/header/headerController.js"></script>
-    <script src="app/shared/menu/menuController.js"></script>
+    <script src="app/shared/main/mainController.js"></script>
     <script src="app/components/club/clubController.js"></script>
     <script src="app/shared/graphic/graphicClubSeasonController.js"></script>
     <script src="app/shared/graphic/graphicClubSeasonDayController.js"></script>

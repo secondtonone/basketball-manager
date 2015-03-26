@@ -21,35 +21,35 @@
           <thead></thead>
           <tbody>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.matches.main + ': '}}</td>
+              <td class="season__statistic__item">{{generalStatistic.matches.title + ': '}}</td>
               <td class="season__statistic__value">
-                <span class="label label-success">{{seasonStatisticItem.matches.wins}}</span>
-                <span>{{generalStatisticValue.matches.wins}}</span>
-                <span class="label label-warning">{{seasonStatisticItem.matches.draw}}</span>
-                <span>{{generalStatisticValue.matches.draw}}</span>
-                <span class="label label-danger">{{seasonStatisticItem.matches.loses}}</span>
-                <span>{{generalStatisticValue.matches.loses}}</span>
+                <span class="label label-success">{{generalStatistic.matches.items.wins.item}}</span>
+                <span>{{generalStatistic.matches.items.wins.value}}</span>
+                <span class="label label-warning">{{generalStatistic.matches.items.draw.item}}</span>
+                <span>{{generalStatistic.matches.items.draw.value}}</span>
+                <span class="label label-danger">{{generalStatistic.matches.items.loses.item}}</span>
+                <span>{{generalStatistic.matches.items.loses.value}}</span>
               </td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.scoredGoals + ': '}}</td>
-              <td class="season__statistic__value">{{generalStatisticValue.scoredGoals}}</td>
+              <td class="season__statistic__item">{{generalStatistic.scoredGoals.item + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatistic.scoredGoals.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.missedGoals + ': '}}</td>
-              <td class="season__statistic__value">{{generalStatisticValue.missedGoals}}</td>
+              <td class="season__statistic__item">{{generalStatistic.missedGoals.item + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatistic.missedGoals.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.averageAttendance + ': '}}</td>
-              <td class="season__statistic__value">{{generalStatisticValue.averageAttendance}}</td>
+              <td class="season__statistic__item">{{generalStatistic.averageAttendance.item + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatistic.averageAttendance.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.winningStreak + ': '}}</td>
-              <td class="season__statistic__value">{{generalStatisticValue.winningStreak}}</td>
+              <td class="season__statistic__item">{{generalStatistic.winningStreak.item + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatistic.winningStreak.value}}</td>
             </tr>
             <tr>
-              <td class="season__statistic__item">{{seasonStatisticItem.losslessStreak + ': '}}</td>
-              <td class="season__statistic__value">{{generalStatisticValue.losslessStreak}}</td>
+              <td class="season__statistic__item">{{generalStatistic.losslessStreak.item + ': '}}</td>
+              <td class="season__statistic__value">{{generalStatistic.losslessStreak.value}}</td>
             </tr>
           </tbody>
         </table>
@@ -59,9 +59,9 @@
         <table class="season__player-statistic_table">
           <thead></thead>
           <tbody>
-            <tr ng-repeat="(key,value) in playerStatisticItem">
-              <td class="season__player-statistic__item">{{value + ': '}}</td>
-              <td class="season__player-statistic__value">{{playerGeneralStatisticValue[key].field +' ('+ playerGeneralStatisticValue[key].value +')'}}</td>
+            <tr ng-repeat="statistic in playerGeneralStatistic">
+              <td class="season__player-statistic__item">{{statistic.item + ': '}}</td>
+              <td class="season__player-statistic__value">{{statistic.field +' ('+ statistic.value +')'}}</td>
             </tr>
           </tbody>
         </table>
@@ -70,9 +70,9 @@
         <table class="season__player-statistic_table">
           <thead></thead>
           <tbody>
-            <tr ng-repeat="(key,value) in clubTitlesItem">
-              <td class="season__player-statistic__item">{{value + ': '}}</td>
-              <td class="season__player-statistic__value">{{clubTitlesValue[key]}}</td>
+            <tr ng-repeat="title in clubTitles">
+              <td class="season__player-statistic__item">{{title.item + ': '}}</td>
+              <td class="season__player-statistic__value">{{title.value}}</td>
             </tr>
           </tbody>
         </table>

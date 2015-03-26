@@ -1,0 +1,237 @@
+{
+  "tabs": {
+    "overview": "Обзор",
+    "history": "История"
+  },
+  "seasonTitle": "Статистика сезона",
+  "generalSeasonTitle": "Общая статистика",
+  "clubAttributes": [
+    "/assets/img/home.png",
+    "/assets/img/club.jpg",
+    "/assets/img/guest.png"
+  ],
+  "clubStatistic": {
+    "clubName": {
+      "item": "Название клуба",
+      "value": "Club FC"
+    },
+    "clubLevel": {
+      "item": "Уровень клуба",
+      "value": "1"
+    },
+    "isFounded": {
+      "item": "Основан",
+      "value": "26.05.2015 13:45"
+    },
+    "clubCountry": {
+      "item": "Страна",
+      "value": "Россия"
+    },
+    "clubCity": {
+      "item": "Город",
+      "value": "Москва"
+    },
+    "clubStadium": {
+      "item": "Стадион",
+      "value": "Сlub FC Stadium"
+    },
+    "stadiumCapacity": {
+      "item": "Вместимость",
+      "value": "300"
+    },
+    "clubManager": {
+      "item": "Менеджер",
+      "value": "Great Player"
+    },
+    "fanclubName": {
+      "item": "Название фан-клуба",
+      "value": "Club FC fans"
+    }
+  },
+  "seasonStatistic": {
+    "matches": {
+      "title": "Матчи",
+      "items": {
+        "wins": {
+          "item": "В",
+          "value": 3
+        },
+        "draw": {
+          "item": "Н",
+          "value": 4
+        },
+        "loses": {
+          "item": "П",
+          "value": 5
+        }
+      }
+    },
+    "scoredGoals": {
+      "item": "Забитые голы",
+      "value": 12
+    },
+    "missedGoals": {
+      "item": "Пропущенные голы",
+      "value": 0
+    },
+    "averageAttendance": {
+      "item": "Средняя посещаемость",
+      "value": 200
+    },
+    "winningStreak": {
+      "item": "Победная серия",
+      "value": 3
+    },
+    "losslessStreak": {
+      "item": "Беспроигрышная серия",
+      "value": 3
+    }
+  },
+  "generalStatistic": {
+    "matches": {
+      "title": "Матчи",
+      "items": {
+        "wins": {
+          "item": "В",
+          "value": 3
+        },
+        "draw": {
+          "item": "Н",
+          "value": 4
+        },
+        "loses": {
+          "item": "П",
+          "value": 5
+        }
+      }
+    },
+    "scoredGoals": {
+      "item": "Забитые голы",
+      "value": 12
+    },
+    "missedGoals": {
+      "item": "Пропущенные голы",
+      "value": 0
+    },
+    "averageAttendance": {
+      "item": "Средняя посещаемость",
+      "value": 200
+    },
+    "winningStreak": {
+      "item": "Победная серия",
+      "value": 3
+    },
+    "losslessStreak": {
+      "item": "Беспроигрышная серия",
+      "value": 3
+    }
+  },
+  "playerStatistic": {
+    "mostScoredGoals": {
+      "item": "Больше всего голов",
+      "field": "Джек",
+      "value": "3"
+    },
+    "mostPasses": {
+      "item": "Больше всего передач",
+      "field": "Бмж",
+      "value": "1"
+    },
+    "mostPlayedMatches": {
+      "item": "Больше всего матчей",
+      "field": "Стрелок",
+      "value": "2"
+    },
+    "mostGoalsInMatch": {
+      "item": "Наибольшее кол-во голов в матче",
+      "field": "Мастер",
+      "value": "2"
+    },
+    "mostSuccessfulMatch": {
+      "item": "Наиболее результативный матч",
+      "field": "Сборная мира FC",
+      "value": "0:7"
+    }
+  },
+  "playerGeneralStatistic": {
+    "mostScoredGoals": {
+      "item": "Больше всего голов",
+      "field": "Джек",
+      "value": "3"
+    },
+    "mostPasses": {
+      "item": "Больше всего передач",
+      "field": "Бмж",
+      "value": "1"
+    },
+    "mostPlayedMatches": {
+      "item": "Больше всего матчей",
+      "field": "Стрелок",
+      "value": "2"
+    },
+    "mostGoalsInMatch": {
+      "item": "Наибольшее кол-во голов в матче",
+      "field": "Мастер",
+      "value": "2"
+    },
+    "mostSuccessfulMatch": {
+      "item": "Наиболее результативный матч",
+      "field": "Сборная мира FC",
+      "value": "0:7"
+    }
+  },
+  "playerInOut": {
+    "in": {
+      "item": "Пришедшие игроки",
+      "value": [
+        "Курт",
+        "Кобейн"
+      ]
+    },
+    "out": {
+      "item": "Ушедшие игроки",
+      "value": [
+        "Фреди",
+        "Меркюри"
+      ]
+    }
+  },
+  "clubTitles": {
+    "champion": {
+      "item": "Чемпион",
+      "value": 4
+    },
+    "viceChampion": {
+      "item": "Вице-чемпион",
+      "value": 4
+    },
+    "winnerChampionsLeague": {
+      "item": "Победитель Лиги Чемпионов",
+      "value": 4
+    },
+    "finalistChampionsLeague": {
+      "item": "Финалист Лиги Чемпионов",
+      "value": 4
+    },
+    "winnerCup": {
+      "item": "Победитель Кубка",
+      "value": 4
+    },
+    "finalistCup": {
+      "item": "Финалист Кубка",
+      "value": 4
+    }
+  },
+  "graphics":{
+    "clubSeason":{
+      "labels": ["1 сезон", "2 сезон", "3 сезон", "4 сезон", "5 сезон", "6 сезон", "7 сезон"],
+      "series": ["Позиция в лиге за сезоны"],
+      "data": [[1,2,4,5,1]]
+    },
+    "clubSeasonDay":{
+      "labels": ["4 день", "8 день", "12 день", "14 день", "18 день", "22 день", "24 день", "28 день"],
+      "series": ["Позиция в лиге за дни сезона"],
+      "data": [[3, 4, 5, 8, 6, 5, 0]]
+    }
+  }
+}

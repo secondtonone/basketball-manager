@@ -1,0 +1,277 @@
+{
+  "position": "GK",
+  "number": 1,
+  "name": "Vova Kaleka1",
+  "roles": {
+    "item": "Роли",
+    "value": [
+      "GK"
+    ]
+  },
+  "team": {
+    "item": "Команда",
+    "value": "User team"
+  },
+  "nation": {
+    "item": "Национальность",
+    "value": "RUS"
+  },
+  "transfer": "",
+  "tall": {
+    "item": "Рост",
+    "value": 190
+  },
+  "hand": {
+    "item": "Рука",
+    "value": "правая"
+  },
+  "age": {
+    "item": "Возраст",
+    "value": 21
+  },
+  "weight": {
+    "item": "Вес",
+    "value": 80
+  },
+  "tender": [
+    "Нет предложений о покупке"
+  ],
+  "speciality": {
+    "item": "Сециальное умение",
+    "value": []
+  },
+  "quality": {
+    "item": "Качество",
+    "value": 2
+  },
+  "skills": {
+    "offensive": {
+      "title": "Защита",
+      "items": {
+        "tackling": {
+          "item": "Отбор мяча",
+          "value": 18
+        },
+        "keeping": {
+          "item": "Опека",
+          "value": 12
+        },
+        "position": {
+          "item": "Выбор позиции",
+          "value": 13
+        },
+        "workingWithBall": {
+          "item": "Обработка мяча",
+          "value": 34
+        },
+        "average": {
+          "item": "Среднее",
+          "value": 12.7
+        }
+      }
+    },
+    "attack": {
+      "title": "Атака",
+      "items": {
+        "pass": {
+          "item": "Передача",
+          "value": 13
+        },
+        "directing": {
+          "item": "Ведение",
+          "value": 12
+        },
+        "ending": {
+          "item": "Завершение",
+          "value": 12
+        },
+        "average": {
+          "item": "Среднее",
+          "value": 14.2
+        }
+      }
+    },
+    "phsychophysic": {
+      "title": "Психофизика",
+      "items": {
+        "physicForm": {
+          "item": "Физ. форма",
+          "value": 12
+        },
+        "strength": {
+          "item": "Сила",
+          "value": 12
+        },
+        "agression": {
+          "item": "Агрессия",
+          "value": 14
+        },
+        "speed": {
+          "item": "Скорость",
+          "value": 15
+        },
+        "creativity": {
+          "item": "Креативность",
+          "value": 12
+        },
+        "average": {
+          "item": "Среднее",
+          "value": 15
+        }
+      }
+    }
+  },
+  "health": {
+    "damage": {
+      "title": "Травма",
+      "value": "полностью здоров",
+      "button": "Нанять",
+      "note": "Наняв врача, вы сократите время восстановления игрока после травмы."
+    },
+    "morality": {
+      "title": "Мораль",
+      "value": "Нормальная",
+      "button": "Нанять",
+      "note": "Наняв психолога, вы поможете игроку восстановить командный дух."
+    },
+    "grade": {
+      "title": "Кондиция",
+      "value": "91%",
+      "button": "Нанять",
+      "note": "Наняв физиотерпевта, вы сможете улучшить состояние игрока."
+    }
+  },
+  "contract": {
+    "remain": {
+      "title": "Осталось лет",
+      "value": 3,
+      "note": "не уйдет из большого спорта в этом сезоне",
+      "button": "Обновить"
+    },
+    "cost": {
+      "title": "Стоимость на рынке",
+      "value": "270K",
+      "note": "не выставлен на продажу. Продайте или уволте его, чтобы освободить место в команде.",
+      "button": "Продать"
+    },
+    "salary": {
+      "title": "Зарплата за сезон",
+      "value": "3.5К",
+      "note": "Продайте или увольте кого-нибудь из игроков, чтобы освободить вакансии для новичков.",
+      "button": "Уволить"
+    }
+  },
+  "statistic": {
+    "league": {
+      "title": "Лига",
+      "items": {
+        "matchesCompleted": {
+          "item": "Матчей сыграно",
+          "value": 10
+        },
+        "playerOfMatch": {
+          "item": "Игрок матча",
+          "value": 0
+        },
+        "goals": {
+          "item": "Голы",
+          "value": 1
+        },
+        "passes": {
+          "item": "Передачи",
+          "value": 1
+        },
+        "warning": {
+          "item": "Предупреждения",
+          "value": 3
+        },
+        "goalsForClub": {
+          "item": "Голы за клуб",
+          "value": 3
+        },
+        "matchesForClub": {
+          "item": "Матчи за клуб",
+          "value": 3
+        },
+        "history": {
+          "item": "История",
+          "value": "3-4-5"
+        }
+      }
+    },
+    "championsLeague": {
+      "title": "Лига чемпионов",
+      "items": {
+        "matchesCompleted": {
+          "item": "Матчей сыграно",
+          "value": 10
+        },
+        "playerOfMatch": {
+          "item": "Игрок матча",
+          "value": 0
+        },
+        "goals": {
+          "item": "Голы",
+          "value": 1
+        },
+        "passes": {
+          "item": "Передачи",
+          "value": 1
+        },
+        "warning": {
+          "item": "Предупреждения",
+          "value": 3
+        },
+        "goalsForClub": {
+          "item": "Голы за клуб",
+          "value": 3
+        },
+        "matchesForClub": {
+          "item": "Матчи за клуб",
+          "value": 3
+        },
+        "history": {
+          "item": "История",
+          "value": "3-4-5"
+        }
+      }
+    },
+    "cup": {
+      "title": "Кубок",
+      "items": {
+        "matchesCompleted": {
+          "item": "Матчей сыграно",
+          "value": 10
+        },
+        "playerOfMatch": {
+          "item": "Игрок матча",
+          "value": 0
+        },
+        "goals": {
+          "item": "Голы",
+          "value": 1
+        },
+        "passes": {
+          "item": "Передачи",
+          "value": 1
+        },
+        "warning": {
+          "item": "Предупреждения",
+          "value": 3
+        },
+        "goalsForClub": {
+          "item": "Голы за клуб",
+          "value": 3
+        },
+        "matchesForClub": {
+          "item": "Матчи за клуб",
+          "value": 3
+        },
+        "history": {
+          "item": "История",
+          "value": "3-4-5"
+        }
+      }
+    }
+  }
+}

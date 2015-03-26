@@ -14,8 +14,13 @@
   margin:20px auto 0;
   background-image: url(/assets/img/basketball-court.png);
 }
+.team__player_insquad  {
+  cursor: pointer;
+}
 .team__player {
   cursor: pointer;
+  background: #000;
+  color: #A2A1A1;
 }
 .player__characteristic {
   margin:0 !important;
@@ -45,10 +50,26 @@
 .player-wrapper {
   padding: 0;
 }
-.team__player__position_gk {
-  background: #5AAB28;
+.team__player__position {
   padding: 2px 4px;
+  margin: 0 4px 0 0;
 }
+.team__player__position_pg {
+  background: #5AAB28;
+}
+.team__player__position_sg {
+  background: #AB1111;
+}
+.team__player__position_sf {
+  background: #3D44AB;
+}
+.team__player__position_pf {
+  background: #A7A5AB;
+}
+.team__player__position_c {
+  background: #AB9E1B;
+}
+
 .team__player__quality {
   height: 20px;
   background-image: url(/assets/img/five_stars.png);
