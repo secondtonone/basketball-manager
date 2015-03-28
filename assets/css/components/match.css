@@ -18,7 +18,7 @@
 }
 .stadium {
   margin-top: 20px;
-  min-height: 500px;
+  height: 500px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: auto;
@@ -30,16 +30,94 @@
   width: 100%;
   border-collapse: separate;
   border-spacing: 5px 10px;
+  table-layout: fixed;
 }
 .stadium__events__event {
   background: rgba(0,0,0,0.8);
   padding: 10px;
   text-align: center;
 }
+.stadium__events__end-time {
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  text-align: center;
+  color: #F44F45;
+}
 .stadium__events__time {
-  width: 150px;
   background: rgba(255,255,255,0.9);
   color: #000;
   padding: 10px;
+  text-align: center;
+}
+.stadium__events__time-col {
+  width: 150px;
+}
+.match__panel {
+  width: 600px;
+  height: 150px;
+  margin: 20px auto;
+  background: #FFF;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+.match__panel__score_own {
+  width: 100px;
+  background: #000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 3em;
+  text-align: center;
+}
+.match__panel__club_own {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  color: #000;
+  font-size: 2em;
+}
+.match__panel__time {
+  width: 100px;
+  background: #000;
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+}
+.match__panel__score_enemy {
+  width: 100px;
+  background: #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3em;
+  text-align: center;
+}
+.match__panel__club_enemy {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  color: #000;
+  font-size: 2em;
+}
+.match__panel__periods {
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+.match__panel__periods__period {
+  background: #000;
+  text-align: center;
+  padding: 2px 5px;
+}
+.match__panel__periods__final {
+  background: #F44F45;
+  text-align: center;
+  padding: 2px 5px;
+}
+.match__panel__status {
+  color: #F44F45;
+  margin: 0 auto;
+  font-size: 2em;
   text-align: center;
 }
