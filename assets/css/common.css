@@ -3,6 +3,9 @@
 @import url('components/club.css');
 @import url('components/store.css');
 @import url('components/team.css');
+@import url('components/training.css');
+@import url('components/transfer.css');
+@import url('components/match.css');
 
 body {
   padding: 180px 0 140px 0;
@@ -91,7 +94,7 @@ body {
   background: #A12818;
   border-color: #A12818;
 }
-input,
+input[type="text"],
 select,
 button {
   border-radius: 0px !important;

@@ -9,9 +9,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="player in team" ng-click="open(player.id)" ng-class="{team__player: player.inSquad == '0', team__player_insquad: position.inSquad == '1'}">
+            <tr ng-repeat="player in team" ng-click="open(player.id)" ng-class="{team__player: player.inSquad == '0', team__player_insquad: player.inSquad == '1'}">
               <td>
-                <span class="team__player__position" ng-class="{team__player__position_pg:player.position == 'PG', team__player__position_sg:player.position == 'SG',team__player__position_sf:player.position == 'SF',team__player__position_pf:player.position == 'PF',team__player__position_c:player.position == 'C' }">
+                <span class="team__player__position" ng-class="{team__player__position_pf: player.inSquad == '0', team__player__position_pg: player.inSquad == '1' }">
                   {{player.position}}
                 </span>
               </td>

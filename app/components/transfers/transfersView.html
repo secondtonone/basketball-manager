@@ -1,3 +1,66 @@
-<div>
-  {{team}}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 search">
+      <h4 class="search__title">{{search.title}}</h4>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search__exp">
+        <h4 class="search__exp__title">{{search.exp.title}}:</h4>
+        <select class="form-control" ng_model="selectedExp" ng-options="value.text for value in search.exp.values">
+        </select>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search__exp form-inline">
+        <h4 class="search__exp__title">{{search.quality}}:</h4>
+        <div class="checkbox search__exp__checkbox">
+          <label>
+            <input type="checkbox">
+            <img class="search__exp__icon" src="assets/img/star-3.png" height="10" alt="">
+          </label>
+        </div>
+        <div class="checkbox search__exp__checkbox">
+          <label>
+            <input type="checkbox">
+            <img class="search__exp__icon" src="assets/img/star-4.png" height="10" alt="">
+          </label>
+        </div>
+        <div class="checkbox search__exp__checkbox">
+          <label>
+            <input type="checkbox">
+            <img class="search__exp__icon" src="assets/img/star-5.png" height="10" alt="">
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search__position">
+        <h4 class="search__exp__title">{{search.position.title}}:</h4>
+        <img src="/assets/img/basketball-court.png" height="200 "alt="">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 team">
+      <div class="table-responsive">
+        <table class="table table-condensed table-striped table-hover">
+          <thead>
+            <tr>
+              <th ng-repeat="title in tableHead" title="{{title}}" data-toggle="tooltip" data-placement="top">{{title}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="player in team" ng-click="open(player.id)" class="team__player_insquad">
+              <td>{{player.name}}</td>
+              <td>
+                <span ng-repeat="role in player.roles" class="team__player__position" ng-class="{team__player__position_pg:role == 'PG', team__player__position_sg:role == 'SG',team__player__position_sf:role == 'SF',team__player__position_pf:role == 'PF',team__player__position_c:role == 'C'}">
+                  {{role}}
+                </span>
+              </td>
+              <td>{{player.nation}}</td>
+              <td>{{player.age}}</td>
+              <td>{{player.speciality}}</td>
+              <td>
+                <img src="assets/img/star-{{player.quality}}.png" height="10" alt="">
+              </td>
+              <td>{{player.cost}}</td>
+              <td>{{player.duration}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>

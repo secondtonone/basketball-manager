@@ -1,0 +1,81 @@
+{
+  "tableHead": {
+    "position": "Позиция",
+    "name": "Имя",
+    "age": "Возраст",
+    "intensity": "Интенсивность",
+    "condition": "Кондиция",
+    "skillProgress": "Прогресс навыка",
+    "development": "Развитие",
+    "skillPoints": "Очки навыка"
+  },
+  "trainings": {
+    "skill": {
+      "title":"Разминка",
+      "value": "10"
+    },
+    "health": {
+      "title":"Пробежка",
+      "value": "20"
+    },
+    "contract": {
+      "title":"Броски",
+      "value": "30"
+    }
+  },
+  "tabs": {
+    "skill": "Навыки",
+    "health": "Здоровье",
+    "contract": "Контракт",
+    "statistic": "Статистика",
+    "transfer": "Трансферы"
+  },
+  "modalText": {
+    "modalTitle": "Вы действительно хотите купить этот предмет?",
+    "buyFor": "Купить за"
+  },
+  "relief": {
+    "title": "Отдых",
+    "note": "Каждые 3 ч. состояние ваших игроков будет улучшаться на 5%.",
+    "time":"10:45",
+    "condition": "50"
+  },
+  "team":[
+    {
+      "id": 1,
+      "position": "PG",
+      "name": "V Kaleka1",
+      "age": "23",
+      "intensity": "23",
+      "condition": "23",
+      "inSquad": "1",
+      "skillProgress": "23",
+      "development": "23",
+      "skillPoints": "3"
+    },
+    {
+      "id": 2,
+      "position": "PG",
+      "name": "V Kaleka2",
+      "age": "23",
+      "intensity": "23",
+      "condition": "23",
+      "inSquad": "1",
+      "skillProgress": "23",
+      "development": "23",
+      "skillPoints": "3"
+    },
+    {
+      "id": 3,
+      "position": "PG",
+      "name": "V Kaleka3",
+      "age": "23",
+      "intensity": "23",
+      "condition": "23",
+      "inSquad": "0",
+      "skillProgress": "23",
+      "development": "23",
+      "skillPoints": "3"
+    }
+  ]
+}

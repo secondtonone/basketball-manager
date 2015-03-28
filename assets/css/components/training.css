@@ -1,0 +1,59 @@
+.training__progress,
+.tarining-relief__progress {
+  margin-bottom: 0;
+  background: #191A19;
+  border-radius: 0;
+}
+.training__progress__progress-bar,
+.tarining-relief__progress__progress-bar {
+  background: #FF6B4B;
+}
+.tarining-types {
+  background: #222322;
+  color:#FFF;
+  padding: 10px;
+  min-height: 500px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tarining-relief {
+  background: #222322;
+  color:#FFF;
+  min-height: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tarining-types__type {
+  background: #FFF;
+  color:#222322;
+  white-space: nowrap;
+  min-height: 280px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.tarining-types__type__icon {
+  margin: 10px 0;
+}
+.tarining-relief {
+  padding: 10px 15px;
+  background: #222322;
+  min-height: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #FFF;
+}
+.tarining-relief__title {
+  background: #FFF;
+  padding: 10px;
+  color: #000;
+  text-align: left;
+}
+.tarining-relief__note {
+  white-space: normal;
+}

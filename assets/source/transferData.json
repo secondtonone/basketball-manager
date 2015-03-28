@@ -1,0 +1,96 @@
+{
+  "tableHead": {
+    "name": "Имя",
+    "roles": "Роли",
+    "nation": "Национальность",
+    "age": "Возраст",
+    "speciality": "Специальность",
+    "quality": "Качество",
+    "cost": "Цена",
+    "duration": "Срок"
+  },
+  "tabs": {
+    "skill": "Навыки",
+    "statistic": "Статистика",
+    "transfer": "Трансферы"
+  },
+  "modalText": {
+    "modalTitle": "Вы действительно хотите купить этот предмет?",
+    "buyFor": "Купить за"
+  },
+  "search":{
+    "title": "Поиск",
+    "quality": "Качество",
+    "position": {
+      "title":"Позиции"
+    },
+    "exp": {
+      "title":"Опыт",
+      "values": [
+        {
+          "value":1,
+          "text":"любой"
+        },{
+          "value":2,
+          "text":"молодой"
+        },{
+          "value":3,
+          "text":"перспективный"
+        },{
+          "value":4,
+          "text":"развитый"
+        },{
+          "value":5,
+          "text":"опытный"
+        },{
+          "value":6,
+          "text":"старая школа"
+        }
+      ]
+    }
+  },
+  "team":[
+    {
+      "id": 1,
+      "name": "Valerii Kaleka1",
+      "roles": [
+        "PG"
+      ],
+      "nation": "RUS",
+      "age": "23",
+      "speciality": "",
+      "quality": 2,
+      "cost": "86K",
+      "duration": "14:45",
+      "exp":"1"
+    },
+    {
+      "id": 2,
+      "name": "Valerii Kaleka2",
+      "roles": [
+        "PG"
+      ],
+      "nation": "RUS",
+      "age": "23",
+      "speciality": "",
+      "quality": 2,
+      "cost": "86K",
+      "duration": "14:45",
+      "exp":"10"
+    },
+    {
+      "id": 3,
+      "name": "Valerii Kaleka3",
+      "roles": [
+        "PG"
+      ],
+      "nation": "RUS",
+      "age": "23",
+      "speciality": "",
+      "quality": 2,
+      "cost": "86K",
+      "duration": "14:45",
+      "exp":"6"
+    }
+  ]
+}

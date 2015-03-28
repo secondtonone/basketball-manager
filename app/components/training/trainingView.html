@@ -1,3 +1,55 @@
-<div>
-  {{team}}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 team">
+      <div class="table-responsive">
+        <table class="table table-condensed table-striped table-hover">
+          <thead>
+            <tr>
+              <th ng-repeat="title in tableHead" title="{{title}}" data-toggle="tooltip" data-placement="top">{{title}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="player in team" ng-click="open(player.id)" ng-class="{team__player: player.inSquad == '0', team__player_insquad: player.inSquad == '1'}">
+              <td>
+                <span class="team__player__position" ng-class="{team__player__position_pg: player.inSquad == '1', team__player__position_pf: player.inSquad == '0'}">
+                  {{player.position}}
+                </span>
+              </td>
+              <td>{{player.name}}</td>
+              <td>{{player.age}}</td>
+              <td>{{player.intensity}}</td>
+              <td>
+                <div class="progress training__progress">
+                  <div class="progress-bar training__progress__progress-bar" role="progressbar" aria-valuenow="{{player.condition}}" aria-valuemin="0" aria-valuemax="100" style="width: {{player.condition}}%;"></div>
+                </div>
+              </td>
+              <td>
+                <div class="progress training__progress">
+                  <div class="progress-bar training__progress__progress-bar" role="progressbar" aria-valuenow="{{player.skillProgress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{player.skillProgress}}%;"></div>
+                </div>
+              </td>
+              <td>{{'+' + player.development}}</td>
+              <td>{{player.skillPoints}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 tarining-types">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-repeat="training in trainings">
+        <div class="tarining-types__type">
+          <h3>{{training.title}}</h3>
+          <img class="tarining-types__type__icon" src="assets/img/training-{{training.value}}.png" alt="icon" height="70">
+          <h3>{{'+' + training.value + '%'}}</h3>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tarining-relief">
+        <h4 class="tarining-relief__title">{{relief.title}}</h4>
+        <p class="tarining-relief__note">{{relief.note}}</p>
+        <div class="progress tarining-relief__progress">
+          <div class="progress-bar tarining-relief__progress__progress-bar" role="progressbar" aria-valuenow="{{relief.condition}}" aria-valuemin="0" aria-valuemax="100" style="width: {{relief.condition}}%;">{{relief.time}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
