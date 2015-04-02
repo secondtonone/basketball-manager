@@ -115,13 +115,58 @@
   color:#1afa54;
 }
 
+.header__field_bottom__icon-wrap {
+  cursor: pointer;
+}
+
+.header__field_bottom__icon-wrap:hover,
+.header__field_current-wrapper:hover {
+  text-shadow: 1px 1px 2px black, 0 0 1em white;
+}
+.header__field_current-link,
+.header__field_current-link:hover,
+.header__field_current-link:focus {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
 .match__beggining {
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  left: 20px;
   width: 50px;
   margin: 0;
   z-index: 1031;
+}
+.game-menu {
+  padding: 0 0 0 80px;
+}
+.medkit-packs {
+  width: 200px;
+  padding: 5px;
+  display: inline-block;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  margin-left:10px;
+}
+.medkit-packs-wrapper {
+  text-align: center;
+}
+.medkit-packs__icon {
+  font-size: 4em;
+  margin: 50px 0;
+}
+.medkit-packs__cost {
+  text-align: right;
+  margin: 20px 0 0;
+  padding: 5px;
+  font-size: 2em;
+}
+.medkit-packs__title {
+  font-size: 2em;
 }
 
 @media (max-width: 768px) {

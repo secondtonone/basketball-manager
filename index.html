@@ -29,12 +29,18 @@
             </div>
             <!-- User resources -->
             <p class="header__field_bottom">
-              <span class="glyphicon glyphicon-user header__field_bottom__icon" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.fans}}</span>
-              <span class="glyphicon glyphicon-usd header__field_bottom__icon" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.money}}</span>
-              <span class="glyphicon glyphicon-superscript header__field_bottom__icon" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.tokens}}</span>
+              <span class="header__field_bottom__icon-wrap" ng-click="open('fans')">
+                <span class="glyphicon glyphicon-user header__field_bottom__icon" aria-hidden="true"></span>
+                <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.fans}}</span>
+              </span>
+              <span class="header__field_bottom__icon-wrap" ng-click="open('money')">
+                <span class="glyphicon glyphicon-usd header__field_bottom__icon" aria-hidden="true"></span>
+                <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.money}}</span>
+              </span>
+              <span class="header__field_bottom__icon-wrap" ng-click="open('token')">
+                <span class="glyphicon glyphicon-superscript header__field_bottom__icon" aria-hidden="true"></span>
+                <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.tokens}}</span>
+              </span>
             </p>
           </div>
           <!-- Match's announcment -->
@@ -65,19 +71,27 @@
             <p class="header__field_main">{{headerData.gameInfo.seasonGame}}</p>
             <!-- User event -->
             <div class="header__field_current-wrapper">
-              <p class="header__field_current-event">
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                {{headerData.userInfo.userEvent}}
-              </p>
+              <a href="#/training" class="header__field_current-link">
+                <p class="header__field_current-event">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  {{headerData.userInfo.userEvent}}
+                </p>
+               </a>
             </div>
             <!-- User medicine boxes -->
             <p class="header__field_bottom">
-              <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_red" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.red}}</span>
-              <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_blue" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.blue}}</span>
-              <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_green" aria-hidden="true"></span>
-              <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.green}}</span>
+              <span class="header__field_bottom__icon-wrap" ng-click="open('firstAid')">
+                <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_red" aria-hidden="true"></span>
+                <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.red}}</span>
+              </span>
+              <span class="header__field_bottom__icon-wrap" ng-click="open('moral')">
+                <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_blue" aria-hidden="true"></span>
+                <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.blue}}</span>
+              </span>
+              <span class="header__field_bottom__icon-wrap" ng-click="open('relief')">
+                <span class="glyphicon glyphicon-plus-sign header__field_bottom__icon header__field_bottom__icon_green" aria-hidden="true"></span>
+                <span class="header__field_bottom__value">{{headerData.userInfo.medicineBox.green}}</span>
+              </span>
             </p>
           </div>
         </div>
@@ -95,21 +109,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#{{menu[8].link}}">
-          <img class="nab-logo" alt="NBA" src="assets/img/logo.png" height="32" width="18">
-        </a>
+        <div class="match__beggining">
+          <a href="#/match"><img src="assets/img/basketbnc.gif" height="100"></a>
+        </div>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav" ng-repeat="item in menuData">
-          <li ng-class="{active: isActive(item.link)}"><a href="#{{item.link}}">{{item.title}}</a></li>
+        <ul class="nav navbar-nav game-menu">
+          <li ng-repeat="item in menuData" ng-class="{active: isActive(item.link)}"><a href="#{{item.link}}">{{item.title}}</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </nav>
-    <div class="match__beggining">
-      <a href="#/match"><img src="assets/img/basketbnc.gif" height="100"></a>
-    </div>
     <!-- Libs -->
     <script src="assets/libs/jquery.min.js"></script>
     <script src="assets/libs/angular.min.js"></script>
@@ -125,6 +136,8 @@
     <script src="assets/js/tooltip.js"></script>
     <!-- Controllers -->
     <script src="app/shared/main/mainController.js"></script>
+    <script src="app/shared/modal/resourceModalController.js"></script>
+    <script src="app/shared/modal/resourceConfirmController.js"></script>
     <script src="app/components/club/clubController.js"></script>
     <script src="app/shared/graphic/graphicClubSeasonController.js"></script>
     <script src="app/shared/graphic/graphicClubSeasonDayController.js"></script>

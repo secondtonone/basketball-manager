@@ -1,3 +1,3 @@
 basketballManagerApp.controller('competitionController',['$scope',function ($scope) {
-  $scope.team = 'first';
+  $scope.team = 'В разработке';
 }]);

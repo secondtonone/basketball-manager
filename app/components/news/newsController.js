@@ -1,3 +1,3 @@
 basketballManagerApp.controller('newsController',['$scope', function($scope) {
-  $scope.club = 'MU';
+  $scope.club = 'В разработке';
 }]);

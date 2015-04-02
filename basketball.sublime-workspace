@@ -4,6 +4,106 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text-align"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"re",
+				"resource"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"c",
+				"colspan	Attr"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"le",
+				"lef	CSS - left: 0;"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"po",
+				"pos:a	position:absolute"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"bs3-",
+				"bs3-container	bs3-container"
+			],
+			[
+				"bs3-col",
+				"bs3-col:12	bs3-col-12"
+			],
+			[
+				"cur",
+				"cur	CSS - cursor: pointer;"
+			],
+			[
+				"bo",
+				"box	CSS - box-sizing: border-box;"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"$s",
+				"$scope	AngularJS"
+			],
+			[
+				"ma",
+				"managerController"
+			],
+			[
 				"fo",
 				"font-size"
 			],
@@ -20,24 +120,12 @@
 				"font-size"
 			],
 			[
-				"pos",
-				"pos	position: ${1:relative};"
-			],
-			[
 				"in",
 				"inline-block"
 			],
 			[
 				"wid",
 				"width"
-			],
-			[
-				"bac",
-				"background-image"
-			],
-			[
-				"bs3-col",
-				"bs3-col:4	bs3-col-4"
 			],
 			[
 				"modal",
@@ -58,10 +146,6 @@
 			[
 				"bs3-t",
 				"bs3-table:condensed	bs3-table-condensed"
-			],
-			[
-				"bo",
-				"box-shadow"
 			],
 			[
 				"border",
@@ -88,20 +172,12 @@
 				"bs3-col:6	bs3-col-6"
 			],
 			[
-				"bs3-",
-				"bs3-col:1	bs3-col-1"
-			],
-			[
 				"p",
 				"pointer"
 			],
 			[
 				"cu",
 				"cur	CSS - cursor: pointer;"
-			],
-			[
-				"ma",
-				"matches"
 			],
 			[
 				"club",
@@ -148,10 +224,6 @@
 				"center"
 			],
 			[
-				"le",
-				"letter-spacing"
-			],
-			[
 				"r",
 				"r	right"
 			],
@@ -170,10 +242,6 @@
 			[
 				"abs",
 				"absolute"
-			],
-			[
-				"po",
-				"position"
 			],
 			[
 				"mi",
@@ -198,10 +266,6 @@
 			[
 				"ur",
 				"urlParsed"
-			],
-			[
-				"re",
-				"require"
 			],
 			[
 				"on",
@@ -252,10 +316,6 @@
 				"PROPERTY_VALUE"
 			],
 			[
-				"ba",
-				"background"
-			],
-			[
 				"border-r",
 				"border-radius"
 			],
@@ -278,10 +338,6 @@
 			[
 				"di",
 				"display"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"ov",
@@ -312,16 +368,8 @@
 				"user-list"
 			],
 			[
-				"c",
-				"click  (function)"
-			],
-			[
 				"my",
 				"mynum"
-			],
-			[
-				"marg",
-				"margin-bottom"
 			],
 			[
 				"padi",
@@ -329,13 +377,15 @@
 			]
 		]
 	},
-	"buffers":
+	"build_system": "Packages/Nodejs/Nodejs.sublime-build",
+	"build_system_choices":
 	[
 	],
-	"build_system": "Packages/Nodejs/Nodejs.sublime-build",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 398.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -415,7 +465,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 506.0
+		"width": 417.0
 	},
 	"console":
 	{
@@ -438,65 +488,82 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/header",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/fonts",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/img",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source"
-	],
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/команда-игрок.png",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/index.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerTransferView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/team.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/teamModalController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/store.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/manager/managerController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/resourceModalController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/main/mainController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/mainData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/header.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceFirstAidView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceMoralView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceReliefView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceFansView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceMoneyView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceTokenView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerStatisticView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/teamModalController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerContractView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/medkitFirstAidView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/news/newsController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/stadium/stadiumController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/finances/financesController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/competition/competitionController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/calendar/calendarController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/common.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/team.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/training.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/transfer.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/match.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/matchData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/match/matchView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/match/matchController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/transferData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/teamData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.routes.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerHealthView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/тренировка.png",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/trainingData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.module.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/clubData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/playerData-1.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic/graphicClubSeasonDayController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic/graphicClubSeasonController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeItem-new.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeItem-form.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/storeModalController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeModal.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubHistoryView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubOverviewView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubService.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu/menuController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/команда-игрок.png",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerTransferView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/store.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerSkillView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerModalView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/club.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubOverviewView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/common.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/header.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/команда.png",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubHistoryView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu/menuController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.module.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/Копия playerHealthView 4.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/.subl86e.tmp",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeModalView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/storeModalController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/магазин.png",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/header/headerController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/bower_components/ui.bootstrap/src/carousel/carousel.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/клуб-история.png",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic/graphicClubSeasonDayController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic/graphicClubSeasonController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/bower_components/angular-chart.js/dist/angular-chart.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/bower_components/angular-chart.js/angular-chart.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/bower_components/Chart.js/Chart.js",
@@ -508,29 +575,17 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/js/tooltip.js",
 		"/Users/maks/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/competition/competitionView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/competition/competitionController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.routes.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/style.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/.gitignore",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu/menuView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/stadium/stadiumView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/stadium/stadiumController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/finances/financesView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/finances/financesController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/manager/managerController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/достижения.png",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/news/newsView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/calendar/calendarView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/achivments/achivmentsView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/achivments/achivmentsController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/calendar/calendarController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/news/newsController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/View.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubService.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/filters.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/directives.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/js/services/services.js",
@@ -562,33 +617,7 @@
 		"/Users/maks/Documents/nodejsproject/logger.js",
 		"/Users/maks/Documents/nodejsproject/app.js",
 		"/Users/maks/Documents/nodejsproject/user/index.js",
-		"/Users/maks/Documents/nodejsproject/db/index.js",
-		"/Users/maks/Documents/nodejsproject/node_modules/express/lib/router/index.js",
-		"/Users/maks/Documents/nodejsproject/node_modules/express/lib/router/layer.js",
-		"/Users/maks/Documents/nodejsproject/db/ru.json",
-		"/Users/maks/Documents/nodejsproject/node_modules/express/package.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/bower_components/angular/angular.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/js/main.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/app.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/events.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/functions.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/buttons.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/buffer_loader.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/bin.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/static_images.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/index.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/football.pro/js/require.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/bower.json",
-		"/Users/maks/Google Диск/задание/Задание на PHP/Bootstrap.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/data/edimdoma-1.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/data/chtoteshe-2.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/data/sites.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/data/stat.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/formservice.pro/css/style.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/example.pro/index.html",
-		"/Users/maks/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Applications/XAMPP/xamppfiles/htdocs/example.pro/js/controller.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/service.pro/css/style.css"
+		"/Users/maks/Documents/nodejsproject/db/index.js"
 	],
 	"find":
 	{
@@ -606,6 +635,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"seasonStatisticItem",
 			"seasonStatisticValue",
 			"seasonStatisticValue ",
 			"src",
@@ -654,6 +684,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"path",
+			"seasonStatistic",
 			"generalStatisticValue",
 			"generalStatisticValue ",
 			"ng-src",
@@ -695,19 +727,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 22.0
@@ -736,7 +755,7 @@
 		"cols":
 		[
 			0.0,
-			0.581691992458,
+			0.479129103175,
 			1.0
 		],
 		"rows":
@@ -754,7 +773,7 @@
 	{
 		"height": 0.0
 	},
-	"project": "basketball.sublime-project",
+	"pinned_build_system": "",
 	"replace":
 	{
 		"height": 72.0
@@ -763,6 +782,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -771,6 +791,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -783,12 +804,12 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
 	"settings":
 	{
 	},

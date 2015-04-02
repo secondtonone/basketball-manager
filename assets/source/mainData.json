@@ -84,5 +84,74 @@
       "title": "Магазин",
       "link": "/store"
     }
-  ]
+  ],
+  "resousrceModal": {
+    "confirmModal":{
+      "text":"Вы действительно хотите купить этот предмет?",
+      "buyFor": "Купить за"
+    },
+    "medkit": {
+      "title": "Быстрая покупка",
+      "firstAid":[
+        {
+          "id_pack": 1,
+          "title": "Медикаменты 5Х",
+          "icon": "red",
+          "cost":6
+        },
+        {
+          "id_pack": 2,
+          "title": "Медикаменты 10Х",
+          "icon": "red",
+          "cost":10
+        },
+        {
+          "id_pack": 3,
+          "title": "Медикаменты 15Х",
+          "icon": "red",
+          "cost":16
+        }
+      ],
+      "moral":[
+        {
+          "id_pack": 1,
+          "title": "Аптечка морали 5Х",
+          "icon": "blue",
+          "cost":6
+        },
+        {
+          "id_pack": 2,
+          "title": "Аптечка морали 10Х",
+          "icon": "blue",
+          "cost":10
+        },
+        {
+          "id_pack": 3,
+          "title": "Аптечка морали 15Х",
+          "icon": "blue",
+          "cost":16
+        }
+      ],
+      "relief":[
+        {
+          "id_pack": 1,
+          "title": "Набор для отдыха 5Х",
+          "icon": "green",
+          "cost":6
+        },
+        {
+          "id_pack": 2,
+          "title": "Набор для отдыха 10Х",
+          "icon": "green",
+          "cost":10
+        },
+        {
+          "id_pack": 3,
+          "title": "Набор для отдыха 15Х",
+          "icon": "green",
+          "cost":16
+        }
+      ]
+    }
+  }
 }
