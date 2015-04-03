@@ -29,7 +29,7 @@
             </div>
             <!-- User resources -->
             <p class="header__field_bottom">
-              <span class="header__field_bottom__icon-wrap" ng-click="open('fans')">
+              <span class="header__field_bottom__icon-wrap">
                 <span class="glyphicon glyphicon-user header__field_bottom__icon" aria-hidden="true"></span>
                 <span class="header__field_bottom__value">{{headerData.userInfo.playerResources.fans}}</span>
               </span>
@@ -55,8 +55,8 @@
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__match">
                 <p class="text-center header__announcement__match__type">{{headerData.gameInfo.typeOfMatch}}</p>
                 <p class="text-center text-uppercase header__announcement__match__vs">vs</p>
-                <p class="text-center header__announcement__match__date">{{headerData.gameInfo.dateOfMatch}}</p>
-                <p class="text-center header__announcement__match__time">{{headerData.gameInfo.timeOfMatch}}</p>
+                <p class="text-center header__announcement__match__date">{{dayOfMatch}}</p>
+                <p class="text-center header__announcement__match__time">{{startMatchGMT}}</p>
               </div>
               <!-- Enemy team -->
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header__announcement__team">
@@ -110,7 +110,7 @@
           <span class="icon-bar"></span>
         </button>
         <div class="match__beggining">
-          <a href="#/match"><img src="assets/img/basketbnc.gif" height="100"></a>
+          <a href="#/match" ng-click="startMatchDisable()"><img src="assets/img/basketbnc.gif" height="100"></a>
         </div>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -153,5 +153,6 @@
     <script src="app/components/stadium/stadiumController.js"></script>
     <script src="app/components/training/trainingController.js"></script>
     <script src="app/components/transfers/transfersController.js"></script>
+    <script src="app/components/match/matchController.js"></script>
   </body>
 </html>

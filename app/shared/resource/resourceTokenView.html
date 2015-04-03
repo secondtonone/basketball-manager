@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{resourceModal.resources.title}}</h3>
+</div>
+<div class="modal-body medkit-packs-wrapper">
+    <div class="medkit-packs" ng-repeat="item in resource" ng-click="open({id: item.id_pack,title: item.title, cost: item.cost, icon: item.icon})">
+      <span class="glyphicon glyphicon-superscript header__field_bottom__icon header__field_bottom__icon_red medkit-packs__icon" aria-hidden="true"></span>
+      <div class="medkit-packs__title">{{item.title}}</div>
+      <div class="medkit-packs__cost">{{item.cost + ' P'}}
+      </div>
+    </div>
+</div>

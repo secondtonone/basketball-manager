@@ -138,6 +138,7 @@
   width: 50px;
   margin: 0;
   z-index: 1031;
+  display: none;
 }
 .game-menu {
   padding: 0 0 0 80px;
@@ -150,7 +151,7 @@
   color: #FFF;
   text-align: center;
   cursor: pointer;
-  margin-left:10px;
+  margin: 10px 0 0 10px;
 }
 .medkit-packs-wrapper {
   text-align: center;

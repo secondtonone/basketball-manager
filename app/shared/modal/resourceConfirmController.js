@@ -1,4 +1,4 @@
-basketballManagerApp.controller('resourceConfirmController', function ($scope, $modalInstance,http,modal,item) {
+basketballManagerApp.controller('resourceConfirmController', function ($scope, $modalInstance,http,modal,item,type) {
 
   //запрос инфы об игроке через id
 
@@ -11,7 +11,7 @@ basketballManagerApp.controller('resourceConfirmController', function ($scope, $
    /* http.post('/assets/source/playerData-' + type + '.json', {msg:'hello word!'}).success(function(data, status, headers, config) {
       $scope.player = data;
     });*/
-    console.log($scope.item.id);
+    console.log($scope.item.id,type);
     $modalInstance.close();
   };
 

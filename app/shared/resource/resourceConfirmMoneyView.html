@@ -1,0 +1,14 @@
+<div class="modal-header">
+  {{modal.confirmModal.text}}
+</div>
+<div class="modal-body medkit-packs-wrapper">
+  <div class="medkit-packs">
+    <span class="glyphicon glyphicon-usd header__field_bottom__icon header__field_bottom__icon_red medkit-packs__icon" aria-hidden="true"></span>
+    <div class="medkit-packs__title">{{item.title}}</div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" ng-click="ok()">{{modal.confirmModal.buyFor + ' ' +item.cost}}
+  <span class="glyphicon glyphicon-superscript header__field_bottom__icon" aria-hidden="true"></span>
+  </button>
+</div>

@@ -1,0 +1,69 @@
+{
+  "matchEvents": [
+    [
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "4000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "5000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "6000",
+        "enemyTeam": ""
+      }
+    ],[
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "7000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "8000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "9000",
+        "enemyTeam": ""
+      }
+    ],[
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "10000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "11000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "12000",
+        "enemyTeam": ""
+      }
+    ],[
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "13000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "14000",
+        "enemyTeam": ""
+      },
+      {
+        "ownTeam":"Бросок",
+        "timeEvent": "15000",
+        "enemyTeam": ""
+      }
+    ]
+  ]
+}

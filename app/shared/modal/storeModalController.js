@@ -1,4 +1,4 @@
-basketballManagerApp.controller('storeModalController', function ($scope, $modalInstance, item, http) {
+basketballManagerApp.controller('storeModalController', function ($scope, $modalInstance, item, http, scope) {
 
   http.post('/assets/source/storeModal.json'/*, {msg:'hello word!'}*/).
     success(function(data, status, headers, config) {
@@ -10,12 +10,17 @@ basketballManagerApp.controller('storeModalController', function ($scope, $modal
 
   });
 
+  console.log(scope.tabs);
+
   $scope.icon = item.icon;
   $scope.id = item.id;
   $scope.price = item.price;
 
   $scope.ok = function () {
-    $modalInstance.close($scope.id);
+    http.post('/assets/source/storeModal.json', {id:item.id}).success(function(data, status, headers, config) {
+
+    });//запрос на сервер
+    $modalInstance.close();
   };
 
   $scope.cancel = function () {

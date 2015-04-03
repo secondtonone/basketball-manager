@@ -1,4 +1,4 @@
-basketballManagerApp.controller('resourceModalController', function ($scope, $modalInstance, type, modalText,resousrceModal, http,modal) {
+basketballManagerApp.controller('resourceModalController', function ($scope, $modalInstance, type, modalText,resourceModal, http,modal) {
 
   //запрос инфы об игроке через id
   http.post('/assets/source/playerData-' + type + '.json'/*, {msg:'hello word!'}*/).
@@ -10,12 +10,23 @@ basketballManagerApp.controller('resourceModalController', function ($scope, $mo
   });
 
   $scope.resource = modalText;
-  $scope.resousrceModal = resousrceModal;
+  $scope.resourceModal = resourceModal;
 
   $scope.open = function (item) {
-    console.log(item);
+
+    var urlPart = 'Medkit';
+
+    $scope.modalText = $scope.resourceModal.resources[type];
+
+    if(type == 'token') {
+      urlPart = 'Token';
+    }
+    if(type == 'money') {
+      urlPart = 'Money';
+    }
+
     var modalInstance = modal.open({
-      templateUrl: 'app/shared/resource/resourceConfirmView.html',
+      templateUrl: 'app/shared/resource/resourceConfirm'+ urlPart +'View.html',
       controller: 'resourceConfirmController',
       size: 'sm',
       backdrop: true,
@@ -27,10 +38,13 @@ basketballManagerApp.controller('resourceModalController', function ($scope, $mo
           return http;
         },
         modal: function () {
-          return $scope.resousrceModal;
+          return $scope.resourceModal;
         },
         item: function () {
           return item;
+        },
+        type: function () {
+          return type;
         }
       }
     });

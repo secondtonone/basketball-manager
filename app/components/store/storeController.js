@@ -81,6 +81,9 @@ basketballManagerApp.controller('storeController',['$scope', '$modal', '$log','$
         },
         http: function () {
           return  $http;
+        },
+        scope: function () {
+          return  $scope;
         }
 
       }
