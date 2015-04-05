@@ -26,7 +26,7 @@ basketballManagerApp.controller('mainController',['$scope','$location','$http', 
     }
 
     var timer = $scope.startMatch - $scope.now;
-    var timeOfMatch = 1200000;
+    var timeOfMatch = 240000;//время матча
 
     var startMatchTimer = function(){
 

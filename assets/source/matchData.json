@@ -1,68 +1,188 @@
 {
+  "matchData":{
+    "period":{
+      "end":"Конец",
+      "th":"й",
+      "quarter":"четверти"
+    },
+    "gameStatus":["1ая четверть","2я четверть","3я четверть","4я четверть","Конец игры"],
+    "teams": {
+      "own": "КВН",
+      "enemy": "Что? Где? Когда?"
+    }
+  },
   "matchEvents": [
     [
       {
         "ownTeam":"Бросок",
-        "timeEvent": "4000",
-        "enemyTeam": ""
+        "timeEvent": 0,
+        "enemyTeam": "",
+        "score":{
+          "own": 0,
+          "enemy": 0
+        },
+        "period":{
+          "own": 0,
+          "enemy": 0
+        },
+        "advantage": 50
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "5000",
-        "enemyTeam": ""
+        "timeEvent": 50,
+        "enemyTeam": "",
+        "score":{
+          "own": 5,
+          "enemy": 6
+        },
+        "period":{
+          "own": 0,
+          "enemy": 0
+        },
+        "advantage": 10
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "6000",
-        "enemyTeam": ""
+        "timeEvent": 60,
+        "enemyTeam": "",
+        "score":{
+          "own": 10,
+          "enemy": 40
+        },
+        "period":{
+          "own": 0,
+          "enemy": 0
+        },
+        "advantage": 40
       }
     ],[
       {
         "ownTeam":"Бросок",
-        "timeEvent": "7000",
-        "enemyTeam": ""
+        "timeEvent": 700,
+        "enemyTeam": "",
+        "score":{
+          "own": 15,
+          "enemy": 43
+        },
+        "period":{
+          "own": 0,
+          "enemy": 0
+        },
+        "advantage": 40
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "8000",
-        "enemyTeam": ""
+        "timeEvent": 800,
+        "enemyTeam": "",
+        "score":{
+          "own": 19,
+          "enemy": 49
+        },
+        "period":{
+          "own": 0,
+          "enemy": 0
+        },
+        "advantage": 30
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "9000",
-        "enemyTeam": ""
+        "timeEvent": 900,
+        "enemyTeam": "",
+        "score":{
+          "own": 67,
+          "enemy": 67
+        },
+        "period":{
+          "own": 23,
+          "enemy": 23
+        },
+        "advantage": 40
       }
     ],[
       {
         "ownTeam":"Бросок",
-        "timeEvent": "10000",
-        "enemyTeam": ""
+        "timeEvent": 1000,
+        "enemyTeam": "",
+        "score":{
+          "own": 100,
+          "enemy": 78
+        },
+        "period":{
+          "own": 1,
+          "enemy": 1
+        },
+        "advantage": 100
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "11000",
-        "enemyTeam": ""
+        "timeEvent": 1100,
+        "enemyTeam": "",
+        "score":{
+          "own": 100,
+          "enemy": 4
+        },
+        "period":{
+          "own": 1,
+          "enemy": 2
+        },
+        "advantage": 30
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "12000",
-        "enemyTeam": ""
+        "timeEvent": 1200,
+        "enemyTeam": "",
+        "score":{
+          "own": 45,
+          "enemy": 41
+        },
+        "period":{
+          "own": 23,
+          "enemy": 56
+        },
+        "advantage": 50
       }
     ],[
       {
         "ownTeam":"Бросок",
-        "timeEvent": "13000",
-        "enemyTeam": ""
+        "timeEvent": 1300,
+        "enemyTeam": "",
+        "score":{
+          "own": 1,
+          "enemy": 4
+        },
+        "period":{
+          "own": 11,
+          "enemy": 23
+        },
+        "advantage": 50
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "14000",
-        "enemyTeam": ""
+        "timeEvent": 1400,
+        "enemyTeam": "",
+        "score":{
+          "own": 1,
+          "enemy": 4
+        },
+        "period":{
+          "own": 40,
+          "enemy": 34
+        },
+        "advantage": 50
       },
       {
         "ownTeam":"Бросок",
-        "timeEvent": "15000",
-        "enemyTeam": ""
+        "timeEvent": 4800,
+        "enemyTeam": "",
+        "score":{
+          "own": 104,
+          "enemy": 97
+        },
+        "period":{
+          "own": 40,
+          "enemy": 350
+        },
+        "advantage": 100
       }
     ]
   ]
