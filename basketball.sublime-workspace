@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"c",
+				"center"
+			],
+			[
+				"s",
+				"script	HTML - Script"
+			],
+			[
+				"p",
+				"position〔function〕"
+			],
+			[
+				"po",
+				"pos-a	position: absolute;"
+			],
+			[
+				"cur",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"bs3-bu",
+				"bs3-button:primary	bs3-button-primary"
+			],
+			[
 				"te",
 				"text-align"
 			],
@@ -24,10 +48,6 @@
 				"text-align"
 			],
 			[
-				"c",
-				"colspan	Attr"
-			],
-			[
 				"up",
 				"uppercase"
 			],
@@ -41,10 +61,6 @@
 			],
 			[
 				"pos",
-				"pos:a	position:absolute"
-			],
-			[
-				"po",
 				"pos:a	position:absolute"
 			],
 			[
@@ -74,10 +90,6 @@
 			[
 				"bs3-col",
 				"bs3-col:12	bs3-col-12"
-			],
-			[
-				"cur",
-				"cur	CSS - cursor: pointer;"
 			],
 			[
 				"bo",
@@ -110,10 +122,6 @@
 			[
 				"w",
 				"nowrap"
-			],
-			[
-				"s",
-				"span	Tag"
 			],
 			[
 				"fon",
@@ -170,10 +178,6 @@
 			[
 				"bs3",
 				"bs3-col:6	bs3-col-6"
-			],
-			[
-				"p",
-				"pointer"
 			],
 			[
 				"cu",
@@ -490,20 +494,33 @@
 	},
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/match/matchController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/team.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamDirectives.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/main/mainController.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/match.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/matchData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.routes.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/mainData.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceMedkitView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceMoneyView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceTokenView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceConfirmMoneyView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceConfirmMedkitView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceConfirmTokenView.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeItem-new.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeItem-form.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/manager/managerController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/resourceModalController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/main/mainController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/mainData.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/header.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceFirstAidView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/index.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceMoralView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceReliefView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceFansView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceMoneyView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/resource/resourceTokenView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/team/teamView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerStatisticView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/teamModalController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerContractView.html",
@@ -516,19 +533,14 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/calendar/calendarController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/common.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/team.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/training.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/transfer.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/transfers/transfersView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/css/components/match.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/training/trainingController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/matchData.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/match/matchView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/match/matchController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/transferData.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/teamData.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/app.routes.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/player/playerHealthView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/тренировка.png",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/trainingData.json",
@@ -537,8 +549,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/playerData-1.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic/graphicClubSeasonDayController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/graphic/graphicClubSeasonController.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeItem-new.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeItem-form.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/modal/storeModalController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/store/storeController.js",
@@ -546,7 +556,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/assets/source/storeData.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubHistoryView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubOverviewView.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubView.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/components/club/clubService.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/app/shared/menu/menuController.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/basketball.pro/source/команда-игрок.png",
@@ -612,12 +621,7 @@
 		"/Users/maks/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/Users/maks/Documents/nodejsproject/server.js",
 		"/Users/maks/Documents/nodejsproject/ee.js",
-		"/Users/maks/Documents/nodejsproject/leak.js",
-		"/Users/maks/Documents/nodejsproject/inspect.js",
-		"/Users/maks/Documents/nodejsproject/logger.js",
-		"/Users/maks/Documents/nodejsproject/app.js",
-		"/Users/maks/Documents/nodejsproject/user/index.js",
-		"/Users/maks/Documents/nodejsproject/db/index.js"
+		"/Users/maks/Documents/nodejsproject/leak.js"
 	],
 	"find":
 	{
@@ -635,6 +639,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"18:34",
 			"seasonStatisticItem",
 			"seasonStatisticValue",
 			"seasonStatisticValue ",
@@ -684,6 +689,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"4000",
 			"path",
 			"seasonStatistic",
 			"generalStatisticValue",

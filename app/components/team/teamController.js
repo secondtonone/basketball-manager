@@ -29,7 +29,11 @@ basketballManagerApp.controller('teamController',['$scope', '$modal', '$log','$h
 
     $scope.modalText = data.modalText;
 
-
+    $('.team-position__court__player_1').css({"top":"30px", "left":"100px"});
+    $('.team-position__court__player_2').css({"top":"40px", "left":"100px"});
+    $('.team-position__court__player_3').css({"top":"50px", "left":"100px"});
+    $('.team-position__court__player_4').css({"top":"60px", "left":"100px"});
+    $('.team-position__court__player_5').css({"top":"70px", "left":"100px"});
   });
 
   $scope.open = function (id) {

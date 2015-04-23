@@ -38,7 +38,7 @@ basketballManagerApp.controller('mainController',['$scope','$location','$http', 
 
     };
 
-    if (timer > 0) {
+    /*if (timer > 0) {
       setTimeout(startMatchTimer,timer);
     } else {
       if (timer + timeOfMatch > 0) {
@@ -48,7 +48,7 @@ basketballManagerApp.controller('mainController',['$scope','$location','$http', 
       } else {
         $(".match__beggining").hide();
       }
-    }
+    }*/
   });
 
 
