@@ -7,14 +7,20 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
     return (time.getMinutes()<10?'0':'') + time.getMinutes() + " : " + (time.getSeconds()<10?'0':'') + time.getSeconds();
   };
 
+  $scope.period = 1;
+
   $scope.eventsTimer = {
     i: 0,
     timers:[],//сгенерированные таймеры всех событий $timeout
     currentTimer: 0,
+    currentTime: 0,
     stopTimers: function () {
-      for (var i = currentTimer; i < this.timers.length; ++i) {
-        $timeout.cancel(timers[i]);
+      for (var i = currentTimer + 1; i < this.timers.length; ++i) {
+        (function(i){
+          $timeout.cancel(timers[i]);
+        })(i);
       }
+      getMatch(period);
     },
     makeTimerQueue: function (events) {//генерация таймеров в массив
 
@@ -24,6 +30,7 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
             $timeout(function () {
 
               $scope.eventsTimer.currentTimer = i;
+              $scope.eventsTimer.currentTime = events.timeEvent*50;
 
               $scope.scoreOwnTeam = events.score.own;
               $scope.scoreEnemyTeam = events.score.enemy;
@@ -45,6 +52,9 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
             }, events.timeEvent*50);
           })(i)
         );
+        if (i == events.length - 1) {
+          $scope.period += 1;
+        }
       }
     }
   };
@@ -65,7 +75,26 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
     $scope.timeOfMatch = "00 : 00";
   });
 
-  $http.post('/assets/source/matchData-1.json'/*, {msg:'hello word!'}*/).
+  function getMatch (period) {
+    $http.post('/assets/source/matchData-' + period + '.json'/*, {msg:'hello word!'}*/).
+      success(function(data, status, headers, config) {
+        // this callback will be called asynchronously
+        var timeOfMatch = 240000;//время матча
+        var i=0;
+        var j=0;
+
+
+        $scope.matchEvents = data;
+
+        $scope.nowOnMatch = new Date().getTime();
+
+        $scope.eventsTimer.makeTimerQueue($scope.matchEvents);
+      });
+  }
+
+  getMatch(period);
+
+ /* $http.post('/assets/source/matchData-1.json').
   success(function(data, status, headers, config) {
     // this callback will be called asynchronously
     var timeOfMatch = 240000;//время матча
@@ -77,7 +106,7 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
 
     $scope.nowOnMatch = new Date().getTime();
 
-    $scope.eventsTimer.makeTimerQueue($scope.matchEvents);
+    $scope.eventsTimer.makeTimerQueue($scope.matchEvents);*/
 
     /*$scope.onStartMatch = $scope.nowOnMatch - $scope.startMatch;//разница между началом матча и заходом пользователя на страницу матча
     console.log($scope.onStartMatch);
@@ -115,7 +144,7 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
         }
       }
     } else {*/
-
+/*
       for (i=0; i < $scope.dataMatchEvents.length; ++i) {
         //цикл по таймам
 
@@ -147,10 +176,11 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
           })($scope.dataMatchEvents[i][j], j, $scope.dataMatchEvents[i].length, i);
         }
 
-      }
+      }*/
+
     /*}*/
 
-  });
+  /*});*/
 
 
 
