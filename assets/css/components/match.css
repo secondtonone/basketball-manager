@@ -26,20 +26,29 @@
   color: #FFF;
   font-size: 1.4em;
 }
+.team {
+  margin-top: 20px;
+  height: 500px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: auto;
+  color: #FFF;
+  font-size: 1.4em;
+}
 .stadium__events {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 5px 10px;
+  border-spacing: 5px 5px;
   table-layout: fixed;
 }
 .stadium__events__event {
   background: rgba(0,0,0,0.8);
-  padding: 5px;
+  padding: 2px;
   text-align: center;
 }
 .stadium__events__end-time {
   background: rgba(0,0,0,0.8);
-  padding: 5px;
+  padding: 2px;
   text-align: center;
   color: #F44F45;
 }
