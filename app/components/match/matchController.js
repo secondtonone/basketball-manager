@@ -55,11 +55,11 @@ basketballManagerApp.controller('matchController',['$scope','$location','$http',
             $scope.advantage = events[i].advantage;
             $scope.timeOfMatch = $scope.msToString(events[i].timeEvent*50*$scope.period);
             //вставка события в шаблон
-            $(".stadium__events__show").prepend('<tr><td class="stadium__events__event">' + events[i].ownTeam + '</td><td class="stadium__events__time">' + $scope.msToString(events[i].timeEvent*50) + '</td><td class="stadium__events__event">' + events[i].enemyTeam + '</td></tr>');
+            $(".match-display__events__show").prepend('<tr><td class="match-display__events__event">' + events[i].ownTeam + '</td><td class="match-display__events__time">' + $scope.msToString(events[i].timeEvent*50) + '</td><td class="match-display__events__event">' + events[i].enemyTeam + '</td></tr>');
             //если последнее событие
             if (i == count-1) {
               //вставка сообщения что период закончен
-              $(".stadium__events__show").prepend('<tr><td colspan="3" class="stadium__events__end-time">'+ $scope.matchData.period.end + ' ' + $scope.period + $scope.matchData.period.th +' '+ $scope.matchData.period.quarter +'</td></tr>');
+              $(".match-display__events__show").prepend('<tr><td colspan="3" class="match-display__events__end-time">'+ $scope.matchData.period.end + ' ' + $scope.period + $scope.matchData.period.th +' '+ $scope.matchData.period.quarter +'</td></tr>');
               //статус игры
               $scope.gameStatusNow = $scope.matchData.gameStatus[$scope.period];
               //следующий период

@@ -25,17 +25,19 @@
       <div class="progress match__progress">
         <div class="progress-bar match__progress__progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{advantage}}%;"></div>
       </div>
-      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 team">
+      <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 team-in-match">
         <button type="button" class="btn btn-primary" ng-click="eventsTimer.stopTimers()">Замена</button>
       </div>
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 stadium">
-        <table class="stadium__events">
-          <col class="stadium__events__event-col">
-          <col class="stadium__events__time-col">
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 match-display">
+        <table class="match-display__events">
+          <col class="match-display__events__event-col">
+          <col class="match-display__events__time-col">
           <thead></thead>
-          <tbody class="stadium__events__show">
+          <tbody class="match-display__events__show">
           </tbody>
         </table>
+      </div>
+      <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 team-in-match">
       </div>
     </div>
   </div>
