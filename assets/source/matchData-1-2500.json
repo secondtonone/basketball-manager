@@ -1,4 +1,18 @@
 [
+  {
+      "ownTeam":"Бросок",
+      "timeEvent": 70,
+      "enemyTeam": "",
+      "score":{
+        "own": 5,
+        "enemy": 6
+      },
+      "period":{
+        "own": 5,
+        "enemy": 6
+      },
+      "advantage": 10
+    },
     {
       "ownTeam":"Бросок",
       "timeEvent": 600,
